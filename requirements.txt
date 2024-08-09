@@ -6,3 +6,5 @@ statsmodels
 seaborn
 scipy
 streamlit
+pyspark
+openpyxl
