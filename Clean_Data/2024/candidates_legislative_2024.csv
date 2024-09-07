@@ -1,0 +1,1095 @@
+Nom_complet;Sexe;Nuance;Elu;Région;Tendency
+COQUELET Christophe;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+PISANI Florence;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+GIVERNET Olga;FEMININ;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+KOTARAC Andréa;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+MAÎTRE Christophe;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+DIVE Julien;MASCULIN;LR;True;Hauts-de-France;Droite
+RAY Nicolas;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+MONNET Yannick;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+BOVET Jorys;MASCULIN;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+GIRARD Christian;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+VAGINAY Sophie;FEMININ;UXD;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+ROSSI Valérie;FEMININ;UG;True;Provence-Alpes-Côte d'Azur;Gauche
+SAINTE-MARIE Jérôme;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+TONNERRE Leïla;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+FERRAND Thierry;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+GALBERT Franck;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+LANDERER Dorette;FEMININ;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+QUIGNARD Laure;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+SALERNO Olivier;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+PORQUET Céline;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+PALLOT Florence;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+VICTORY Michèle;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+TERMET Flavien;MASCULIN;RN;True;Grand Est;Extrême-Droite
+WARSMANN Jean-Luc;MASCULIN;DVD;True;Grand Est;Droite
+MESTER Pauline;FEMININ;RN;False;Grand Est;Extrême-Droite
+ALOZY Michèle;FEMININ;RN;False;Occitanie;Extrême-Droite
+GIRARDIN Olivier;MASCULIN;UG;False;Grand Est;Gauche
+BAZIN-MALGRAS Valérie;FEMININ;LR;True;Grand Est;Droite
+BARTHÈS Christophe;MASCULIN;RN;True;Occitanie;Extrême-Droite
+ANDRIEU Philippe;MASCULIN;UG;False;Occitanie;Gauche
+FALCON Frédéric;MASCULIN;RN;True;Occitanie;Extrême-Droite
+ROUSSET Jean-François;MASCULIN;ENS;True;Occitanie;Centre-Droite
+PAROLIN Marie-Christine;FEMININ;RN;False;Occitanie;Extrême-Droite
+MAZARS Stéphane;MASCULIN;ENS;True;Occitanie;Centre-Droite
+VERNY Gérault;MASCULIN;UXD;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+GONZALEZ José;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+BAUBRY Romain;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+KOUKAS Nicolas;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+OUGOURLOU-OGLOU Bernard;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+TONUSSI Romain;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+PENA Marc;MASCULIN;UG;True;Provence-Alpes-Côte d'Azur;Gauche
+FOUQUART Emmanuel;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+LÉCORCHÉ Pascaline;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+HENRY Chantal;FEMININ;RN;False;Normandie;Extrême-Droite
+BOUYX Bertrand;MASCULIN;ENS;True;Normandie;Centre-Droite
+CALBRIX Nicolas;MASCULIN;RN;False;Normandie;Extrême-Droite
+DELAPORTE Arthur;MASCULIN;UG;True;Normandie;Gauche
+PATRIER-LEITUS Jérémie;MASCULIN;ENS;True;Normandie;Centre-Droite
+FOURREAU Emma;FEMININ;UG;False;Normandie;Gauche
+LACROIX Gilles;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+DESCOEUR Vincent;MASCULIN;DVD;True;Auvergne-Rhône-Alpes;Droite
+LEBRAUD Virginie;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+MARTIN Barthélemy;MASCULIN;UXD;False;Nouvelle-Aquitaine;Extrême-Droite
+MESNIER Thomas;MASCULIN;HOR;False;Nouvelle-Aquitaine;Centre-Droite
+GERARD Raphaël;MASCULIN;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+BERTHOLOM Karen;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+MORIN Stéphane;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+CHAUVEAU Emma;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+MONGELOUS Aymeric;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+CORMIER-BOULIGEON François;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+GENTILLET Pierre;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+DUENAS Bastian;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+DUBOIS Francis;MASCULIN;LR;False;Nouvelle-Aquitaine;Droite
+ELOPHE Valéry;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+PARIS Didier;MASCULIN;ENS;False;Bourgogne-Franche-Comté;Centre-Droite
+BRIGAND Hubert;MASCULIN;LR;True;Bourgogne-Franche-Comté;Droite
+GODARD Océane;FEMININ;UG;True;Bourgogne-Franche-Comté;Gauche
+PRIBETICH Pierre;MASCULIN;UG;True;Bourgogne-Franche-Comté;Gauche
+GUYENOT Tatiana;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+LE FUR Corentin;MASCULIN;LR;True;Bretagne;Droite
+KIEFFER Antoine;MASCULIN;RN;False;Bretagne;Extrême-Droite
+LUDE Noël;MASCULIN;RN;False;Bretagne;Extrême-Droite
+LE BOULANGER Jean-Yves;MASCULIN;RN;False;Bretagne;Extrême-Droite
+COSSON Mickaël;MASCULIN;ENS;True;Bretagne;Centre-Droite
+SIMONET Valérie;FEMININ;DVD;False;Nouvelle-Aquitaine;Droite
+DRUILLOLE Christelle;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+PEYTAVIE Sébastien;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+CATHUS Christophe;MASCULIN;UG;False;Nouvelle-Aquitaine;Gauche
+MARTIN Pascale;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+LUTZ Thomas;MASCULIN;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+BLOCH Matthieu;MASCULIN;UXD;True;Bourgogne-Franche-Comté;Extrême-Droite
+GRANGIER Géraldine;FEMININ;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+GENEVARD Annie;FEMININ;LR;True;Bourgogne-Franche-Comté;Droite
+VOYNET Dominique;FEMININ;UG;True;Bourgogne-Franche-Comté;Gauche
+POCHON Marie;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+PAGANI Isabelle;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+POLLET Lisette;FEMININ;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+VALLON Jean-Paul;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+VEYRI Timour;MASCULIN;UG;False;Normandie;Gauche
+LOIR Christine;FEMININ;RN;True;Normandie;Extrême-Droite
+BRUN Philippe;MASCULIN;UG;True;Normandie;Gauche
+MAUVIEUX Kévin;MASCULIN;RN;True;Normandie;Extrême-Droite
+HOUSSIN Timothée;MASCULIN;RN;True;Normandie;Extrême-Droite
+MARLEIX Olivier;MASCULIN;LR;True;Centre-Val de Loire;Droite
+VIGIER Philippe;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+BAY Christophe;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+KASBARIAN Guillaume;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+LE FUR Patrick;MASCULIN;RN;False;Bretagne;Extrême-Droite
+BALANANT Erwan;MASCULIN;ENS;True;Bretagne;Centre-Droite
+TANGUY Liliana;FEMININ;ENS;True;Bretagne;Centre-Droite
+LE MEUR Annaïg;FEMININ;ENS;True;Bretagne;Centre-Droite
+THOMAÏDIS Renée;FEMININ;RN;False;Bretagne;Extrême-Droite
+LARSONNEUR Jean-Charles;MASCULIN;DVC;False;Bretagne;Centre
+BIHOUEE Tony;MASCULIN;RN;False;Bretagne;Extrême-Droite
+LE GAC Didier;MASCULIN;ENS;True;Bretagne;Centre-Droite
+MARCANGELI Laurent;MASCULIN;ENS;True;Corse;Centre-Droite
+COLOMBANI Paul-André;MASCULIN;REG;True;Corse;Autres
+ACQUAVIVA Jean-Félix;MASCULIN;REG;False;Corse;Autres
+CASTELLANI Michel;MASCULIN;REG;True;Corse;Autres
+CADÈNE Nicolas;MASCULIN;UG;False;Occitanie;Gauche
+ALLEGRET-PILOT Alexandre;MASCULIN;UXD;True;Occitanie;Extrême-Droite
+BORD Arnaud;MASCULIN;UG;False;Occitanie;Gauche
+BORDES Pascale;FEMININ;RN;True;Occitanie;Extrême-Droite
+MENARD Charles;MASCULIN;UG;False;Occitanie;Gauche
+DELCHARD Loïc;MASCULIN;RN;False;Occitanie;Extrême-Droite
+BEX Christophe;MASCULIN;UG;True;Occitanie;Gauche
+FALGAS-COLOMINA Caroline;FEMININ;RN;False;Occitanie;Extrême-Droite
+PORTARRIEU Jean-François;MASCULIN;ENS;True;Occitanie;Centre-Droite
+STAMBACH-TERRENOIR Anne;FEMININ;UG;True;Occitanie;Gauche
+ALARCON Stéphanie;FEMININ;RN;False;Occitanie;Extrême-Droite
+CLOUET Hadrien;MASCULIN;UG;True;Occitanie;Gauche
+SIMION Arnaud;MASCULIN;UG;True;Occitanie;Gauche
+DELRIEU Florian;MASCULIN;ENS;False;Occitanie;Centre-Droite
+CAZENEUVE Jean-René;MASCULIN;ENS;True;Occitanie;Centre-Droite
+CENDRÉ Alice;FEMININ;RN;False;Occitanie;Extrême-Droite
+FELD Mathilde;FEMININ;UG;True;Nouvelle-Aquitaine;Gauche
+DAVID Alain;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+LAMARA Laurent;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+METTE Sophie;FEMININ;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+DE FOURNAS Grégoire;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+BOUDIÉ Florent;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+ARY Ariane;FEMININ;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+CAZENAVE Thomas;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+NAVEYS--DUMAS Clémence;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+BOURLIEUX Jimmy;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+GALZY Stéphanie;FEMININ;RN;True;Occitanie;Extrême-Droite
+BOUQUIN Manon;FEMININ;RN;True;Occitanie;Extrême-Droite
+DOMBRE-COSTE Fanny;FEMININ;UG;True;Occitanie;Gauche
+CARRIERE Sylvain;MASCULIN;UG;True;Occitanie;Gauche
+MÉNARD Emmanuelle;FEMININ;DVD;False;Occitanie;Droite
+BELAOUNI Nadia;FEMININ;UG;False;Occitanie;Gauche
+OLIVA Josyan;MASCULIN;UXD;False;Occitanie;Extrême-Droite
+MAILLART-MÉHAIGNERIE Laurence;FEMININ;ENS;False;Bretagne;Centre-Droite
+GILOIS Françoise;FEMININ;RN;False;Bretagne;Extrême-Droite
+MARION Tangi;MASCULIN;RN;False;Bretagne;Extrême-Droite
+LEMOINE Dylan;MASCULIN;RN;False;Bretagne;Extrême-Droite
+FRANÇOIS Jacques;MASCULIN;RN;False;Bretagne;Extrême-Droite
+D'ORSANNE Virginie;FEMININ;RN;False;Bretagne;Extrême-Droite
+MESMEUR Marie;FEMININ;UG;True;Bretagne;Gauche
+FORISSIER Nicolas;MASCULIN;LR;True;Centre-Val de Loire;Droite
+JOLIVET François;MASCULIN;HOR;True;Centre-Val de Loire;Centre-Droite
+ALFANDARI Henri;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+DUCAMP François;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+LABARONNE Daniel;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+BAUMEL Laurent;MASCULIN;UG;True;Centre-Val de Loire;Gauche
+PIERRE Benoist;MASCULIN;ENS;False;Centre-Val de Loire;Centre-Droite
+RICHOL Joëlle;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+IORDANOFF Jérémie;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+AUGUSTE Benoît;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BENE Cécile;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+MALANDRINO Anne-Marie;FEMININ;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+JOLLY Alexis;MASCULIN;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+MICHEL Cécile;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+LACROIX Alexandre;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+CHATELAIN Cyrielle;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+MARTIN Élisa;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+GRUET Justine;FEMININ;LR;True;Bourgogne-Franche-Comté;Droite
+GRABY Valérie;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+MOSCA Thierry;MASCULIN;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+FRANCESCHINI Sylvie;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+BIESBROUCK Ludovic;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+FOSSEY Véronique;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+MARION Christophe;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+FESNEAU Marc;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+AUCANTE Nils;MASCULIN;DVD;False;Centre-Val de Loire;Droite
+BONNET Sylvie;FEMININ;LR;True;Auvergne-Rhône-Alpes;Droite
+TAITE Jean-Pierre;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+GRANGER Sandrine;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+MANDON Emmanuel;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+SIMON Marie;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BREUIL Hervé;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+VIGIER Jean-Pierre;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+HEUZEY Alexandre;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+PICHON Julio;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+COTREL Stéphanie;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+BRARD Jean-Michel;MASCULIN;DVD;True;Pays de la Loire;Droite
+JOSSO Sandrine;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+AMADOU Aude;FEMININ;ENS;False;Pays de la Loire;Centre-Droite
+BOUCHET Gauthier;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+ROUSSEL Fabrice;MASCULIN;UG;True;Pays de la Loire;Gauche
+AMIOT Ségolène;FEMININ;UG;True;Pays de la Loire;Gauche
+PECQUEUR Bryan;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+DE PÉLICHY Constance;FEMININ;DVD;True;Centre-Val de Loire;Droite
+NOTTIN Bruno;MASCULIN;UG;False;Centre-Val de Loire;Gauche
+LACAPELLE Jean-Lin;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+DUPLESSY Emmanuel;MASCULIN;UG;True;Centre-Val de Loire;Gauche
+RABAULT Tiffanie;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+RAMOS Richard;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+PRADIÉ Aurélien;MASCULIN;LR;True;Occitanie;Droite
+TIEGNA Huguette;FEMININ;ENS;False;Occitanie;Centre-Droite
+DELBOSQ Sébastien;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+COURREGELONGUE Christophe;MASCULIN;UG;False;Nouvelle-Aquitaine;Gauche
+COUSIN Annick;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+GOUSSEAU Luc-Etienne;MASCULIN;RN;False;Occitanie;Extrême-Droite
+BLIN Anne-Laure;FEMININ;LR;True;Pays de la Loire;Droite
+SAINT-PAUL Laëtitia;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+GERNIGON François;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+LASCAUD Clémence;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+PAVAGEAU Tim;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+METAYER Léo;MASCULIN;UG;False;Pays de la Loire;Gauche
+BOURDOULEIX Gilles;MASCULIN;UXD;False;Pays de la Loire;Extrême-Droite
+GOSSELIN Philippe;MASCULIN;DVD;True;Normandie;Droite
+GIRY Pierre;MASCULIN;UXD;False;Normandie;Extrême-Droite
+CONQUER Nicolas;MASCULIN;UXD;False;Normandie;Extrême-Droite
+SORRE Bertrand;MASCULIN;ENS;True;Normandie;Centre-Droite
+BESSON Thierry;MASCULIN;RN;False;Grand Est;Extrême-Droite
+MICHELET Maxime;MASCULIN;UXD;True;Grand Est;Extrême-Droite
+MAGNIER Lise;FEMININ;ENS;True;Grand Est;Centre-Droite
+FRIGOUT Anne-Sophie;FEMININ;RN;False;Grand Est;Extrême-Droite
+ALBERTINI Xavier;MASCULIN;ENS;True;Grand Est;Centre-Droite
+BENTZ Christophe;MASCULIN;RN;True;Grand Est;Extrême-Droite
+CADENAS Jean-Michel;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+BELL Annie;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+GAROT Guillaume;MASCULIN;UG;True;Pays de la Loire;Gauche
+BOULOGNE Anthony;MASCULIN;RN;True;Grand Est;Extrême-Droite
+PECHER Louis-Joseph;MASCULIN;EXD;False;Grand Est;Extrême-Droite
+MERCIER Estelle;FEMININ;UG;True;Grand Est;Gauche
+WEBER Frédéric;MASCULIN;RN;True;Grand Est;Extrême-Droite
+BILDE Dominique;FEMININ;RN;False;Grand Est;Extrême-Droite
+MAILLOT Geneviève;FEMININ;RN;False;Grand Est;Extrême-Droite
+PANCHER Bertrand;MASCULIN;DVD;False;Grand Est;Droite
+MOLAC Paul;MASCULIN;REG;True;Bretagne;Autres
+MARTIN Joseph;MASCULIN;RN;False;Bretagne;Extrême-Droite
+DE KERSAUSON Florent;MASCULIN;RN;False;Bretagne;Extrême-Droite
+LE PEIH Nicole;FEMININ;ENS;True;Bretagne;Centre-Droite
+JACQUES Jean-Michel;MASCULIN;ENS;True;Bretagne;Centre-Droite
+MÉTAYER Lysiane;FEMININ;ENS;False;Bretagne;Centre-Droite
+PHILIPPO Baptiste;MASCULIN;RN;False;Grand Est;Extrême-Droite
+DI FILIPPO Fabien;MASCULIN;LR;True;Grand Est;Droite
+JENFT Pascal;MASCULIN;RN;True;Grand Est;Extrême-Droite
+JACOBELLI Laurent;MASCULIN;RN;True;Grand Est;Extrême-Droite
+BELHADDAD Belkhir;MASCULIN;ENS;True;Grand Est;Centre-Droite
+CHOMARD Victor;MASCULIN;RN;False;Grand Est;Extrême-Droite
+VOINCON Marie-Claude;FEMININ;RN;False;Grand Est;Extrême-Droite
+PAUL Christian;MASCULIN;UG;False;Bourgogne-Franche-Comté;Gauche
+GOULET Perrine;FEMININ;ENS;True;Bourgogne-Franche-Comté;Centre-Droite
+PARMENTIER-LECOCQ Charlotte;FEMININ;ENS;True;Hauts-de-France;Centre-Droite
+CATTEAU Victor;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+BERNALICIS Ugo;MASCULIN;UG;True;Hauts-de-France;Gauche
+TESSON Thierry;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+GARDES Jean-Baptiste;MASCULIN;UXD;False;Hauts-de-France;Extrême-Droite
+MOULIN Maxime;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+BERTELOOT Pierrick;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+BARA Laurence;FEMININ;RN;False;Hauts-de-France;Extrême-Droite
+LANDRU Christine;FEMININ;RN;False;Hauts-de-France;Extrême-Droite
+VERBRUGGHE Bastien;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+GOKEL Julien;MASCULIN;DIV;True;Hauts-de-France;Autres
+LISO Brigitte;FEMININ;ENS;True;Hauts-de-France;Centre-Droite
+GERARD Félicie;FEMININ;HOR;True;Hauts-de-France;Centre-Droite
+LECLERCQ Carole;FEMININ;RN;False;Hauts-de-France;Extrême-Droite
+LEYS Ethan;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+HABERT-DASSAULT Victor;MASCULIN;LR;False;Hauts-de-France;Droite
+WOERTH Eric;MASCULIN;ENS;True;Hauts-de-France;Centre-Droite
+MAGNIER David;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+SABATOU Alexandre;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+GUINIOT Michel;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+BRASSENS Bertrand;MASCULIN;UG;False;Hauts-de-France;Gauche
+JOURDAN Chantal;FEMININ;UG;True;Normandie;Gauche
+PETCHENINA Ludmila;FEMININ;RN;False;Normandie;Extrême-Droite
+LOUWAGIE Véronique;FEMININ;DVD;True;Normandie;Droite
+PANNIER-RUNACHER Agnès;FEMININ;ENS;True;Hauts-de-France;Centre-Droite
+EVRARD Auguste;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+DOLLE Benoît;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+COISNE Hadrien;MASCULIN;ENS;False;Hauts-de-France;Centre-Droite
+DUMONT Pierre-Henri;MASCULIN;LR;False;Hauts-de-France;Droite
+GOLLIOT Antoine;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+DUPRÉ Isabelle;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+CHASSAIGNE André;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+LINGEMANN Delphine;FEMININ;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+VICHNIEVSKY Laurence;FEMININ;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+PRONONCE Hervé;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+MATTEÏ Jean-Paul;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+CRESSON Nicolas;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+ECHANIZ Iñaki;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+DUFAU Peio;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+CAPDEVIELLE Colette;FEMININ;UG;True;Nouvelle-Aquitaine;Gauche
+POUEYTO Josy;FEMININ;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+FÉGNÉ Denis;MASCULIN;UG;True;Occitanie;Gauche
+SORIN Marie-Christine;FEMININ;RN;False;Occitanie;Extrême-Droite
+MARTINEZ Michèle;FEMININ;RN;True;Occitanie;Extrême-Droite
+DOGOR-SUCH Sandrine;FEMININ;RN;True;Occitanie;Extrême-Droite
+BLANC Sophie;FEMININ;RN;True;Occitanie;Extrême-Droite
+DAUBENBERGER Delphine;FEMININ;RN;False;Grand Est;Extrême-Droite
+HETZEL Patrick;MASCULIN;LR;True;Grand Est;Droite
+SITZENSTUHL Charles;MASCULIN;ENS;True;Grand Est;Centre-Droite
+MOREL Louise;FEMININ;ENS;True;Grand Est;Centre-Droite
+BERNHARDT Théo;MASCULIN;RN;True;Grand Est;Extrême-Droite
+THIEBAUT Vincent;MASCULIN;ENS;True;Grand Est;Centre-Droite
+STUDER Bruno;MASCULIN;ENS;False;Grand Est;Centre-Droite
+JORON Virginie;FEMININ;RN;False;Grand Est;Extrême-Droite
+KLINKERT Brigitte;FEMININ;ENS;True;Grand Est;Centre-Droite
+ZIMMERMANN Christian;MASCULIN;RN;False;Grand Est;Extrême-Droite
+OTT Hubert;MASCULIN;ENS;True;Grand Est;Centre-Droite
+SCHELLENBERGER Raphaël;MASCULIN;LR;True;Grand Est;Droite
+FUCHS Bruno;MASCULIN;ENS;True;Grand Est;Centre-Droite
+PINTO Pierre;MASCULIN;RN;False;Grand Est;Extrême-Droite
+GERY Jonathan;MASCULIN;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+LOUIS Patrick;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BROCARD Blandine;FEMININ;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+HUMBERT DUPALAIS Alexandre;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+PATOUT Cecile;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+LAHMAR Abdelkader;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+LUISIER Clémence;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+RUNEL Sandrine;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+BOUMERTIT Idir;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+AMARD Gabriel;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+JONCOUR Tiffany;FEMININ;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+CHRETIEN Alain;MASCULIN;ENS;False;Bourgogne-Franche-Comté;Centre-Droite
+UNTERMAIER Cécile;FEMININ;UG;False;Bourgogne-Franche-Comté;Gauche
+REBEYROTTE Rémy;MASCULIN;ENS;False;Bourgogne-Franche-Comté;Centre-Droite
+DAMIEN Olivier;MASCULIN;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+DIRX Benjamin;MASCULIN;ENS;True;Bourgogne-Franche-Comté;Centre-Droite
+SANVERT Arnaud;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+DELPECH Julie;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+GRELIER Jean-Carles;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+LEBOUCHER Elise;FEMININ;UG;True;Pays de la Loire;Gauche
+FEVRE François;MASCULIN;UXD;False;Pays de la Loire;Extrême-Droite
+MARTINEAU Eric;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+DEGOIS Typhanie;FEMININ;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+ROLLAND Vincent;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+COULOMME Jean-François;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+DAUCHY Marie;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+VIOLLAND Anne-Cécile;FEMININ;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+BOUVARD Anis;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+ROIT-LEVÊQUE Guillaume;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+VALENTIN Antoine;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+LUHO Magalie;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+ROSEREN Xavier;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+KEMPF Raphaël;MASCULIN;UG;False;Île-de-France;Gauche
+LE BOURGEOIS Robert;MASCULIN;RN;True;Normandie;Extrême-Droite
+POTIER Douglas;MASCULIN;RN;False;Normandie;Extrême-Droite
+JUMEL Sébastien;MASCULIN;UG;False;Normandie;Gauche
+VIDAL Annie;FEMININ;ENS;True;Normandie;Centre-Droite
+LESEUL Gérard;MASCULIN;UG;True;Normandie;Gauche
+PENNELLE Guillaume;MASCULIN;RN;False;Normandie;Extrême-Droite
+FIRMIN LE BODO Agnès;FEMININ;HOR;True;Normandie;Centre-Droite
+HEROUIN-LÉAUTEY Florence;FEMININ;UG;True;Normandie;Gauche
+LE COZ Isabelle;FEMININ;RN;False;Normandie;Extrême-Droite
+DANIEL Pauline;FEMININ;RN;False;Normandie;Extrême-Droite
+DIMITROVA Ivanka;FEMININ;RN;False;Île-de-France;Extrême-Droite
+PERIGAULT Isabelle;FEMININ;LR;False;Île-de-France;Droite
+BRUN Davy;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+SOUDAIS Ersilia;FEMININ;UG;True;Île-de-France;Gauche
+SAINT-MARTIN Arnaud;MASCULIN;UG;True;Île-de-France;Gauche
+BENTOUNSI Amal;FEMININ;UG;False;Île-de-France;Gauche
+FONTANA Philippe;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+THIÉBAULT-MARTINEZ Céline;FEMININ;UG;True;Île-de-France;Gauche
+LAISNEY Maxime;MASCULIN;UG;True;Île-de-France;Gauche
+BONNET Arnaud;MASCULIN;UG;True;Île-de-France;Gauche
+BERGÉ Aurore;FEMININ;ENS;True;Île-de-France;Centre-Droite
+SAUGER Mélinda;FEMININ;UG;False;Île-de-France;Gauche
+MORIN Laurent;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+MASSIAUX Christophe;MASCULIN;UG;False;Île-de-France;Gauche
+DE ROZIERES Babette;FEMININ;UXD;False;Île-de-France;Extrême-Droite
+PIRON Béatrice;FEMININ;ENS;True;Île-de-France;Centre-Droite
+MARTINET William;MASCULIN;UG;False;Île-de-France;Gauche
+NAUTH Cyril;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+BARROT Jean-Noël;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+LEBEC Marie;FEMININ;ENS;True;Île-de-France;Centre-Droite
+RODWELL Charles;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+BENYETTOU Yassine;MASCULIN;UG;False;Île-de-France;Gauche
+FIÉVET Jean-Marie;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+BATHO Delphine;FEMININ;ECO;True;Nouvelle-Aquitaine;Gauche-Radicale
+LANZI Nathalie;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+RIBEIRO BILLET Nathalie;FEMININ;RN;False;Hauts-de-France;Extrême-Droite
+MAQUET Emmanuel;MASCULIN;LR;False;Hauts-de-France;Droite
+GEST Anthony;MASCULIN;ENS;False;Hauts-de-France;Centre-Droite
+TOUMI Damien;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+TERLIER Jean;MASCULIN;ENS;True;Occitanie;Centre-Droite
+CABROLIER Frédéric;MASCULIN;RN;False;Occitanie;Extrême-Droite
+ERODI Karen;FEMININ;UG;True;Occitanie;Gauche
+CHRETIEN Claudie;FEMININ;UG;False;Occitanie;Gauche
+BAREGES Brigitte;FEMININ;UXD;True;Occitanie;Extrême-Droite
+BOCCALETTI Frédéric;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+RAMBAUD Stéphane;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+SOULÉ Sébastien;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+RIMBERT Catherine;FEMININ;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+JAOUEN Catherine;FEMININ;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+LORHO Marie-France;FEMININ;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+AUZANOT Bénédicte;FEMININ;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+BUFFETAUT Stéphane;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+DUBIN Pascal;MASCULIN;UXD;False;Pays de la Loire;Extrême-Droite
+LATOMBE Philippe;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+EBRAN Marie-Christine;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+MARIEL-GODARD Julie;FEMININ;UG;False;Pays de la Loire;Gauche
+LECAMP Pascal;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+DARLES Emmanuelle;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+TURQUOIS Nicolas;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+CHEVALLIER Estelle;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+DELAUTRETTE Stéphane;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+MAUDET Damien;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+FREYCHET Albin;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+GAULTIER Jean-Jacques;MASCULIN;LR;False;Grand Est;Droite
+DUSSAUSAYE Gaëtan;MASCULIN;RN;True;Grand Est;Extrême-Droite
+FRANÇOIS Pierre;MASCULIN;RN;False;Grand Est;Extrême-Droite
+NAEGELEN Christophe;MASCULIN;DVD;True;Grand Est;Droite
+ROY Sophie-Laurence;FEMININ;UXD;True;Bourgogne-Franche-Comté;Extrême-Droite
+LOURY Florence;FEMININ;UG;False;Bourgogne-Franche-Comté;Gauche
+MANCK Carine;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+CHAUCHE Florian;MASCULIN;UG;False;Bourgogne-Franche-Comté;Gauche
+HILLAIRE Mathieu;MASCULIN;UG;False;Île-de-France;Gauche
+MILOSEVIC Stefan;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+GUIBERT Audrey;FEMININ;RN;False;Île-de-France;Extrême-Droite
+RIXAIN Marie-Pierre;FEMININ;ENS;True;Île-de-France;Centre-Droite
+LARROUTUROU Pierre;MASCULIN;UG;False;Île-de-France;Gauche
+BEAUDET Stéphane;MASCULIN;DIV;False;Île-de-France;Autres
+MERRIEN Paul-Henri;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+DUROVRAY François;MASCULIN;DVD;False;Île-de-France;Droite
+GUEDJ Jérôme;MASCULIN;UG;True;Île-de-France;Gauche
+LÉAUMENT Antoine;MASCULIN;UG;True;Île-de-France;Gauche
+GAILLARD Brice;MASCULIN;UG;False;Île-de-France;Gauche
+PASQUINI Francesca;FEMININ;UG;False;Île-de-France;Gauche
+SÉJOURNÉ Stéphane;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+BERGER Jean-Didier;MASCULIN;LR;True;Île-de-France;Droite
+THEVENOT Prisca;FEMININ;ENS;True;Île-de-France;Centre-Droite
+PITTI Raphaël;MASCULIN;UG;False;Île-de-France;Gauche
+DIDIER Geoffroy;MASCULIN;LR;False;Île-de-France;Droite
+ATTAL Gabriel;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+SEBAIHI Sabrina;FEMININ;UG;True;Île-de-France;Gauche
+CORBIÈRE Alexis;MASCULIN;DVG;True;Île-de-France;Gauche
+BOUROUAHA Soumya;FEMININ;UG;True;Île-de-France;Gauche
+LAGARDE Aude;FEMININ;UDI;False;Île-de-France;Droite
+LEGAVRE Jérôme;MASCULIN;UG;True;Île-de-France;Gauche
+JOLIVET Sébastien;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+PORTES Thomas;MASCULIN;UG;True;Île-de-France;Gauche
+BARBOTIN Arnaud;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+LOUFFOK Lyes;MASCULIN;UG;False;Île-de-France;Gauche
+LEGER Julien;MASCULIN;UG;False;Île-de-France;Gauche
+MARTINS PEREIRA Joao;MASCULIN;UG;False;Île-de-France;Gauche
+PHILIPPET Alain;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+KEKE Rachel;FEMININ;UG;False;Île-de-France;Gauche
+BOUHADA May;FEMININ;UG;False;Île-de-France;Gauche
+JULES-ARTHUR Maximillien;MASCULIN;UG;False;Île-de-France;Gauche
+FOLEST Estelle;FEMININ;ENS;False;Île-de-France;Centre-Droite
+REMY Nadejda;FEMININ;RN;False;Île-de-France;Extrême-Droite
+ESKENAZI Romain;MASCULIN;UG;True;Île-de-France;Gauche
+LELAIDIER Kimberley;FEMININ;RN;False;Île-de-France;Extrême-Droite
+MARION Agnès;FEMININ;RN;False;Île-de-France;Extrême-Droite
+TACHÉ Aurélien;MASCULIN;UG;True;Île-de-France;Gauche
+LACOUTURE Karine;FEMININ;UG;False;Île-de-France;Gauche
+SERVA Olivier;MASCULIN;DVG;True;Outre-Mer;Gauche
+BAPTISTE Christian;MASCULIN;DVG;True;Outre-Mer;Gauche
+MATHIASIN Max;MASCULIN;DVG;True;Outre-Mer;Gauche
+CALIFER Elie;MASCULIN;SOC;True;Outre-Mer;Gauche
+NADEAU Marcellin;MASCULIN;REG;True;Outre-Mer;Autres
+NILOR Jean-Philippe;MASCULIN;REG;True;Outre-Mer;Autres
+BELLAY Beatrice;FEMININ;SOC;True;Outre-Mer;Gauche
+EDMOND-MARIETTE Philippe;MASCULIN;REG;False;Outre-Mer;Autres
+CASTOR Jean-Victor;MASCULIN;REG;True;Outre-Mer;Autres
+RIMANE Davy;MASCULIN;REG;True;Outre-Mer;Autres
+GAILLARD Perceval;MASCULIN;UG;True;Outre-Mer;Gauche
+RATENON Jean-Hugues;MASCULIN;DVG;True;Outre-Mer;Gauche
+RIVIERE Joseph;MASCULIN;RN;True;Outre-Mer;Extrême-Droite
+KBIDI Emeline;FEMININ;DVG;True;Outre-Mer;Gauche
+BEGUE Christelle;FEMININ;RN;False;Outre-Mer;Extrême-Droite
+MAILLOT Frédéric;MASCULIN;DVG;True;Outre-Mer;Gauche
+NAILLET Philippe;MASCULIN;UG;True;Outre-Mer;Gauche
+LENORMAND Stéphane;MASCULIN;DVD;True;Outre-Mer;Droite
+KAMARDINE Mansour;MASCULIN;LR;False;Outre-Mer;Droite
+REID ABERLOT Mereana;FEMININ;UG;True;Outre-Mer;Gauche
+SANQUER Nicole;FEMININ;DVD;True;Outre-Mer;Droite
+TJIBAOU Emmanuel;MASCULIN;REG;True;Outre-Mer;Autres
+METZDORF Nicolas;MASCULIN;DVD;True;Outre-Mer;Droite
+QUESTEL Alexandra;FEMININ;DVD;False;Outre-Mer;Droite
+DJOUADI Samira;FEMININ;ENS;False;Étranger;Centre-Droite
+LAKRAFI Amélia;FEMININ;ENS;True;Étranger;Centre-Droite
+PAJOT Franck;MASCULIN;UG;False;Étranger;Gauche
+GONDARD Cécilia;FEMININ;UG;False;Étranger;Gauche
+DA SILVA Maxime;MASCULIN;UG;False;Étranger;Gauche
+HABIB Meyer;MASCULIN;LR;False;Étranger;Droite
+CAROIT Eléonore;FEMININ;ENS;True;Étranger;Centre-Droite
+LESCURE Roland;MASCULIN;ENS;True;Étranger;Centre-Droite
+PETIT Frédéric;MASCULIN;ENS;True;Étranger;Centre-Droite
+MINVIELLE Charlotte;FEMININ;UG;False;Étranger;Gauche
+FERRACCI Marc;MASCULIN;ENS;True;Étranger;Centre-Droite
+BUISSON Jérôme;MASCULIN;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+CHAVENT Marc;MASCULIN;UXD;True;Auvergne-Rhône-Alpes;Extrême-Droite
+DUBARRY Karine;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+DAUBIÉ Romain;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+BRETON Xavier;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+TORRE Philippe;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+QUENEY Rémy;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+THÈS Anne-Marie;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+LEFEBVRE Romain;MASCULIN;LR;False;Auvergne-Rhône-Alpes;Droite
+BLANC Felix;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+WALTER Léo;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+ALBRAND Louis;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+ALLEMAND Marie-José;FEMININ;UG;True;Provence-Alpes-Côte d'Azur;Gauche
+TIVOLI Lionel;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+PAUGET Eric;MASCULIN;LR;True;Provence-Alpes-Côte d'Azur;Droite
+TABAROT Michèle;FEMININ;LR;True;Provence-Alpes-Côte d'Azur;Droite
+MARTIN Alexandra;FEMININ;LR;True;Provence-Alpes-Côte d'Azur;Droite
+CHAIX Bernard;MASCULIN;UXD;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+SAULIGNAC Hervé;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+BRUN Fabrice;MASCULIN;DVD;True;Auvergne-Rhône-Alpes;Droite
+TREBUCHET Vincent;MASCULIN;UXD;True;Auvergne-Rhône-Alpes;Extrême-Droite
+VUIBERT Lionel;MASCULIN;ENS;False;Grand Est;Centre-Droite
+ROGER Isabelle;FEMININ;RN;False;Grand Est;Extrême-Droite
+CORDIER Pierre;MASCULIN;DVD;True;Grand Est;Droite
+PANIFOUS Laurent;MASCULIN;UG;True;Occitanie;Gauche
+FERRAND Albéric;MASCULIN;RN;False;Grand Est;Extrême-Droite
+RANC Angélique;FEMININ;RN;True;Grand Est;Extrême-Droite
+POUTOU Philippe;MASCULIN;UG;False;Occitanie;Gauche
+RANCOULE Julien;MASCULIN;RN;True;Occitanie;Extrême-Droite
+THIVENT Viviane;FEMININ;UG;False;Occitanie;Gauche
+FEVRE Pierre-Antoine;MASCULIN;UXD;False;Occitanie;Extrême-Droite
+ALEXANDRE Laurent;MASCULIN;UG;True;Occitanie;Gauche
+CHARTIER Jean-Philippe;MASCULIN;RN;False;Occitanie;Extrême-Droite
+CIOT Jean-David;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+BOURCET-GINER Véronique;FEMININ;ENS;False;Provence-Alpes-Côte d'Azur;Centre-Droite
+AÏDAROUS Wassila;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+TACHE DE LA PAGERIE Emmanuel;MASCULIN;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+MÉLIN Joëlle;FEMININ;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+ZULESI Jean-Marc;MASCULIN;ENS;False;Provence-Alpes-Côte d'Azur;Centre-Droite
+FABRE-AUBRESPY Hervé;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+DHARRÉVILLE Pierre;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+KESSACI Amine;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+BLANCHET Christophe;MASCULIN;ENS;True;Normandie;Centre-Droite
+CHAPRON Philippe;MASCULIN;RN;False;Normandie;Extrême-Droite
+BORNE Elisabeth;FEMININ;ENS;True;Normandie;Centre-Droite
+LIBAN Josseline;FEMININ;RN;False;Normandie;Extrême-Droite
+FAUVAGE Edouard;MASCULIN;RN;False;Normandie;Extrême-Droite
+BRUNEAU Joël;MASCULIN;DVD;True;Normandie;Droite
+BONY Jean Yves;MASCULIN;DVD;True;Auvergne-Rhône-Alpes;Droite
+GALLAIS Dorothée;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+COLOMBIER Caroline;FEMININ;RN;True;Nouvelle-Aquitaine;Extrême-Droite
+MARSAUD Sandra;FEMININ;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+PILATO René;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+MARKOWSKY Pascal;MASCULIN;RN;True;Nouvelle-Aquitaine;Extrême-Droite
+BITEAU Benoît;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+BARUSSEAU Fabrice;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+FALORNI Olivier;MASCULIN;DVG;True;Nouvelle-Aquitaine;Gauche
+PLASSARD Christophe;MASCULIN;HOR;True;Nouvelle-Aquitaine;Centre-Droite
+IANNUZZI Ugo;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+KERVRAN Loïc;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+SANSU Nicolas;MASCULIN;UG;True;Centre-Val de Loire;Gauche
+HOLLANDE François;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+MEUNIER Frédérique;FEMININ;LR;True;Nouvelle-Aquitaine;Droite
+LIORET René;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+DUMONT Sophie;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+MARTIN Didier;MASCULIN;ENS;False;Bourgogne-Franche-Comté;Centre-Droite
+COUDERT Thierry;MASCULIN;UXD;False;Bourgogne-Franche-Comté;Extrême-Droite
+HERVIEU Catherine;FEMININ;UG;True;Bourgogne-Franche-Comté;Gauche
+DE MELLON Odile;FEMININ;RN;False;Bretagne;Extrême-Droite
+BERVILLE Hervé;MASCULIN;ENS;True;Bretagne;Centre-Droite
+LEPVRAUD Murielle;FEMININ;UG;True;Bretagne;Gauche
+BOTHOREL Eric;MASCULIN;ENS;True;Bretagne;Centre-Droite
+GORGIARD Marion;FEMININ;UG;False;Bretagne;Gauche
+LENOIR Bartolomé;MASCULIN;UXD;True;Nouvelle-Aquitaine;Extrême-Droite
+JOUBERT Florence;FEMININ;RN;True;Nouvelle-Aquitaine;Extrême-Droite
+MARCHAUDON Dominique-Louise;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+MULLER Serge;MASCULIN;RN;True;Nouvelle-Aquitaine;Extrême-Droite
+LECHON Nadine;FEMININ;RN;True;Nouvelle-Aquitaine;Extrême-Droite
+VÉZIÈS Séverine;FEMININ;UG;False;Bourgogne-Franche-Comté;Gauche
+PACQUOT Nicolas;MASCULIN;ENS;False;Bourgogne-Franche-Comté;Centre-Droite
+DUVERNOIS Magali;FEMININ;UG;False;Bourgogne-Franche-Comté;Gauche
+JEANDENAND Floriane;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+FUSIS Eric;MASCULIN;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+AUTRAND Adhémar;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+ANTHOINE Emmanuelle;FEMININ;LR;False;Auvergne-Rhône-Alpes;Droite
+CHKERI Karim;MASCULIN;UG;False;Auvergne-Rhône-Alpes;Gauche
+CHRISTOPHLE Paul;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+LEVAVASSEUR Katiana;FEMININ;RN;True;Normandie;Extrême-Droite
+CANIN Julien;MASCULIN;ENS;False;Normandie;Centre-Droite
+PAUPER Patrice;MASCULIN;RN;False;Normandie;Extrême-Droite
+TAMARELLE VERHAEGHE Marie;FEMININ;ENS;False;Normandie;Centre-Droite
+DUCHÉ Frédéric;MASCULIN;ENS;False;Normandie;Centre-Droite
+DUBOIS Olivier;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+PECOUT Roger;MASCULIN;UXD;False;Centre-Val de Loire;Extrême-Droite
+HUWART Harold;MASCULIN;DVC;True;Centre-Val de Loire;Centre
+MINOT Emma;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+THOMIN Mélanie;FEMININ;UG;True;Bretagne;Gauche
+PEREZ Christian;MASCULIN;RN;False;Bretagne;Extrême-Droite
+ALANOU Annick;FEMININ;RN;False;Bretagne;Extrême-Droite
+LEBERT Grégory;MASCULIN;UG;False;Bretagne;Gauche
+MELCHIOR Graziella;FEMININ;ENS;True;Bretagne;Centre-Droite
+CADALEN Pierre-Yves;MASCULIN;UG;True;Bretagne;Gauche
+VULPIANI Sylvaine;FEMININ;UG;False;Bretagne;Gauche
+DONVAL Martine;FEMININ;RN;False;Bretagne;Extrême-Droite
+QUARENA Ariane;FEMININ;RN;False;Corse;Extrême-Droite
+FILONI François;MASCULIN;RN;False;Corse;Extrême-Droite
+CECCOLI François-Xavier;MASCULIN;DVD;True;Corse;Droite
+MARCHAL Jean-Michel;MASCULIN;RN;False;Corse;Extrême-Droite
+JOSSERAND Sylvie;FEMININ;RN;True;Occitanie;Extrême-Droite
+SALA Michel;MASCULIN;UG;False;Occitanie;Gauche
+MEURIN Pierre;MASCULIN;RN;True;Occitanie;Extrême-Droite
+OROMI Sabine;FEMININ;UG;False;Occitanie;Gauche
+GILLET Yoann;MASCULIN;RN;True;Occitanie;Extrême-Droite
+AVIRAGNET Joël;MASCULIN;UG;True;Occitanie;Gauche
+INARD Gaëtan;MASCULIN;UXD;False;Occitanie;Extrême-Droite
+OBERTI Jacques;MASCULIN;UG;True;Occitanie;Gauche
+LEONARDELLI Julien;MASCULIN;RN;False;Occitanie;Extrême-Droite
+KHALIFA Frank;MASCULIN;RN;False;Occitanie;Extrême-Droite
+VIGNON Corinne;FEMININ;ENS;True;Occitanie;Centre-Droite
+HOBET Elodie;FEMININ;ENS;False;Occitanie;Centre-Droite
+DEMANGE-FIERLEJ Nadine;FEMININ;RN;False;Occitanie;Extrême-Droite
+ARRIGHI Christine;FEMININ;UG;True;Occitanie;Gauche
+YELMA Jean-Luc;MASCULIN;RN;False;Occitanie;Extrême-Droite
+TAUPIAC David;MASCULIN;DVG;True;Occitanie;Gauche
+BERTHONNEAU Rémy;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+RECHAGNEUX Julie;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+PANONACLE Sophie;FEMININ;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+MARQUES François-Xavier;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+GOT Pascale;FEMININ;UG;True;Nouvelle-Aquitaine;Gauche
+CHADOURNE Sandrine;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+BASTERES Maryvonne;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+PALUTEAU Bruno;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+SAINT-PASTEUR Sébastien;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+POULLIAT Eric;MASCULIN;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+MANENC Aurélien;MASCULIN;UG;False;Occitanie;Gauche
+ROME Sébastien;MASCULIN;UG;False;Occitanie;Gauche
+TROISE Lauriane;FEMININ;RN;False;Occitanie;Extrême-Droite
+DELAPIERRE Cédric;MASCULIN;RN;False;Occitanie;Extrême-Droite
+GABARRON Julien;MASCULIN;RN;True;Occitanie;Extrême-Droite
+ALLONCLE Charles;MASCULIN;UXD;True;Occitanie;Extrême-Droite
+ROUMEGAS Jean-Louis;MASCULIN;UG;True;Occitanie;Gauche
+VANHAECKE Bérénice;FEMININ;RN;False;Bretagne;Extrême-Droite
+LE NABOUR Christine;FEMININ;ENS;True;Bretagne;Centre-Droite
+BENOIT Thierry;MASCULIN;ENS;True;Bretagne;Centre-Droite
+BOURGEAUX Jean-Luc;MASCULIN;DVD;True;Bretagne;Droite
+HIGNET Mathilde;FEMININ;UG;True;Bretagne;Gauche
+FAILLÉ Charlotte;FEMININ;ENS;False;Bretagne;Centre-Droite
+BOUCHER Nicolas;MASCULIN;ENS;False;Bretagne;Centre-Droite
+SIFFERT Marc;MASCULIN;UXD;False;Centre-Val de Loire;Extrême-Droite
+WUNSCH Mylène;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+ROBIN Jules;MASCULIN;UXD;False;Centre-Val de Loire;Extrême-Droite
+THILLAYE Sabine;FEMININ;ENS;True;Centre-Val de Loire;Centre-Droite
+FOUGERON Corine;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+BELLANGER Jean-François;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+SCHREIBER Frédérique;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+NEUDER Yannick;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+NOSBÉ Sandrine;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+BATTISTEL Marie-Noëlle;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+DI SPIGNO Yaqine;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+PEREZ Thierry;MASCULIN;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+MANSOURI Hanane;FEMININ;UXD;True;Auvergne-Rhône-Alpes;Extrême-Droite
+PREVOST Hugo;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+ROBERT Edouard;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+DUPRÉ Christel;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+VUILLEMIN-PLANCON Aurore;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+BRULEBOIS Danielle;FEMININ;ENS;True;Bourgogne-Franche-Comté;Centre-Droite
+DALLOZ Marie-Christine;FEMININ;LR;True;Bourgogne-Franche-Comté;Droite
+VALLAUD Boris;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+CAUSSE Lionel;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+DARRIEUSSECQ Geneviève;FEMININ;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+DE OLIVEIRA Virginia;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+BARDET Marine;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+CHUDEAU Roger;MASCULIN;RN;True;Centre-Val de Loire;Extrême-Droite
+RAMBAUD Gerbert;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+GRANGER Grégoire;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+STEVENSON Ismaël;MASCULIN;UG;False;Auvergne-Rhône-Alpes;Gauche
+LA MARCA Angelina;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+COURBON Pierrick;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+LE JAOUEN Eric;MASCULIN;UDI;False;Auvergne-Rhône-Alpes;Droite
+FOURETS Suzanne Maryse Denise;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+WAUQUIEZ Laurent;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+HUNAULT Alain;MASCULIN;DVD;False;Pays de la Loire;Droite
+VIANCIN Maxime;MASCULIN;UG;False;Pays de la Loire;Gauche
+MALDINEY Bastian;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+HUNAULT Michel;MASCULIN;UXD;False;Pays de la Loire;Extrême-Droite
+PINEAU Gaëlle;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+TAVEL Matthias;MASCULIN;UG;True;Pays de la Loire;Gauche
+EL HAÏRY Sarah;FEMININ;ENS;False;Pays de la Loire;Centre-Droite
+ARC Laurie;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+BELHAMITI Mounir;MASCULIN;ENS;False;Pays de la Loire;Centre-Droite
+PARIS Mathilde;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+MÉNAGÉ Thomas;MASCULIN;RN;True;Centre-Val de Loire;Extrême-Droite
+BROSSE Anthony;MASCULIN;ENS;True;Centre-Val de Loire;Centre-Droite
+BABIN Elodie;FEMININ;RN;False;Centre-Val de Loire;Extrême-Droite
+RIST Stéphanie;FEMININ;ENS;True;Centre-Val de Loire;Centre-Droite
+ZELLER Anthony;MASCULIN;RN;False;Centre-Val de Loire;Extrême-Droite
+BOUGEARD Elsa;FEMININ;UG;False;Occitanie;Gauche
+PROENÇA Christophe;MASCULIN;UG;True;Occitanie;Gauche
+LAUZZANA Michel;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+LAPORTE Hélène;FEMININ;RN;True;Nouvelle-Aquitaine;Extrême-Droite
+LEPERS Guillaume;MASCULIN;DVD;True;Nouvelle-Aquitaine;Droite
+MOREL A L'HUISSIER Pierre;MASCULIN;DVD;False;Occitanie;Droite
+BOURGEAULT Edouard;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+LAHONDÈS Aurore;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+BOLO Philippe;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+DUBRE CHIRAT Nicole;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+DUPONT Stella;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+RICHARD Elsa;FEMININ;UG;False;Pays de la Loire;Gauche
+MASSEGLIA Denis;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+SIMON Franck;MASCULIN;RN;False;Normandie;Extrême-Droite
+TRAVERT Stéphane;MASCULIN;ENS;True;Normandie;Centre-Droite
+PIC Anna;FEMININ;UG;True;Normandie;Gauche
+KURDZIEL Marie-Françoise;FEMININ;RN;False;Normandie;Extrême-Droite
+DE COURSON Charles;MASCULIN;DVC;True;Grand Est;Centre
+GIRARDIN Eric;MASCULIN;ENS;False;Grand Est;Centre-Droite
+BISIAUX Achille;MASCULIN;RN;False;Grand Est;Extrême-Droite
+MILLER Laure;FEMININ;ENS;True;Grand Est;Centre-Droite
+MEXIS Adrien;MASCULIN;UXD;False;Grand Est;Extrême-Droite
+ABBA Bérangère;FEMININ;ENS;False;Grand Est;Centre-Droite
+BANNIER Géraldine;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+FAVENNEC Yannick;MASCULIN;HOR;True;Pays de la Loire;Centre-Droite
+VEYRE DE SORAS Paule;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+FIAT Caroline;FEMININ;UG;False;Grand Est;Gauche
+POTIER Dominique;MASCULIN;UG;True;Grand Est;Gauche
+MELET Patricia;FEMININ;RN;False;Grand Est;Extrême-Droite
+ETIENNE Martine;FEMININ;UG;False;Grand Est;Gauche
+BAZIN Thibault;MASCULIN;LR;True;Grand Est;Droite
+LACRESSE Emmanuel;MASCULIN;ENS;False;Grand Est;Centre-Droite
+AMBLARD Maxime;MASCULIN;RN;True;Grand Est;Extrême-Droite
+LE CUILLIER Katel;FEMININ;RN;False;Bretagne;Extrême-Droite
+LE HÉNANFF Anne;FEMININ;ENS;True;Bretagne;Centre-Droite
+PAHUN Jimmy;MASCULIN;ENS;True;Bretagne;Centre-Droite
+OLIVIERO Antoine;MASCULIN;RN;False;Bretagne;Extrême-Droite
+GUIHOT-VIEIRA Nathalie;FEMININ;RN;False;Bretagne;Extrême-Droite
+GIRARD Damien;MASCULIN;UG;True;Bretagne;Gauche
+RAUCH Isabelle;FEMININ;ENS;True;Grand Est;Centre-Droite
+SIMON Océane;FEMININ;RN;False;Grand Est;Extrême-Droite
+SEITLINGER Vincent;MASCULIN;LR;False;Grand Est;Droite
+LEGER Céline;FEMININ;UG;False;Grand Est;Gauche
+LALOUX Grégoire;MASCULIN;RN;False;Grand Est;Extrême-Droite
+COLIN-OESTERLÉ Nathalie;FEMININ;UDI;True;Grand Est;Droite
+MENDES Ludovic;MASCULIN;ENS;True;Grand Est;Centre-Droite
+GUIBERT Julien;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+GALLOIS Charles-Henri;MASCULIN;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+QUATREBOEUFS Marie Hélène;FEMININ;UXD;False;Hauts-de-France;Extrême-Droite
+HUYGHE Sébastien;MASCULIN;DVD;True;Hauts-de-France;Droite
+GUÉRARD Philippe;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+CHÉREAU Frédéric;MASCULIN;UG;False;Hauts-de-France;Gauche
+CHRISTOPHE Paul;MASCULIN;DVD;True;Hauts-de-France;Droite
+VICOT Roger;MASCULIN;UG;True;Hauts-de-France;Gauche
+BATAILLE Jean-Pierre;MASCULIN;DVD;True;Hauts-de-France;Droite
+LÉTARD Valérie;FEMININ;UDI;True;Hauts-de-France;Droite
+SPILLEBOUT Violette;FEMININ;ENS;True;Hauts-de-France;Centre-Droite
+DARMANIN Gérald;MASCULIN;ENS;True;Hauts-de-France;Centre-Droite
+ACCART Maxence;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+MORAND Anne;FEMININ;RN;False;Hauts-de-France;Extrême-Droite
+SAYAH Céline;FEMININ;RN;False;Hauts-de-France;Extrême-Droite
+LE COQ Aurélien;MASCULIN;UG;True;Hauts-de-France;Gauche
+GUIRAUD David;MASCULIN;UG;True;Hauts-de-France;Gauche
+MARAIS-BEUIL Claire;FEMININ;RN;True;Hauts-de-France;Extrême-Droite
+GRIMPRET Mathieu;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+MINOT Maxime;MASCULIN;LR;False;Hauts-de-France;Droite
+KA Amadou;MASCULIN;UG;False;Hauts-de-France;Gauche
+LECA Daniel;MASCULIN;UDI;False;Hauts-de-France;Droite
+VOS Frédéric Pierre;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+BELZIDSKY Nadine;FEMININ;RN;False;Normandie;Extrême-Droite
+NURY Jérôme;MASCULIN;DVD;True;Normandie;Droite
+VIENNE Gérard;MASCULIN;RN;False;Normandie;Extrême-Droite
+HEUSÈLE Alban;MASCULIN;RN;False;Hauts-de-France;Extrême-Droite
+PETIT Bertrand;MASCULIN;UG;False;Hauts-de-France;Gauche
+FAIT Philippe;MASCULIN;ENS;True;Hauts-de-France;Centre-Droite
+PARMENTIER Caroline;FEMININ;RN;True;Hauts-de-France;Extrême-Droite
+DE FLEURIAN Marc;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+BARBARIN Olivier;MASCULIN;UG;False;Hauts-de-France;Gauche
+PIRÈS BEAUNE Christine;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+CARLETTO Brigitte;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+CHALUS Benjamin;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+PERS Nadine;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+MAXIMI Marianne;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+BECKER Monique;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+HABIB David;MASCULIN;DVG;True;Nouvelle-Aquitaine;Gauche
+LASSALLE Jean;MASCULIN;DVD;False;Nouvelle-Aquitaine;Droite
+LASTÉCOUÈRES Victor;MASCULIN;UXD;False;Nouvelle-Aquitaine;Extrême-Droite
+ROSSO Serge;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+VERRIERE François;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+MONTEIL Olivier;MASCULIN;RN;False;Occitanie;Extrême-Droite
+FERRER Sylvie;FEMININ;UG;True;Occitanie;Gauche
+BARAILLÉ Julien;MASCULIN;UG;False;Occitanie;Gauche
+CULLELL Nathalie;FEMININ;UG;False;Occitanie;Gauche
+DASPE Francis;MASCULIN;UG;False;Occitanie;Gauche
+BUFFET Françoise;FEMININ;ENS;True;Grand Est;Centre-Droite
+KIEFFER Denis;MASCULIN;RN;False;Grand Est;Extrême-Droite
+ESTEVE Thomas;MASCULIN;RN;False;Grand Est;Extrême-Droite
+COUSSEDIERE Vincent;MASCULIN;RN;False;Grand Est;Extrême-Droite
+KOCHERT Stéphanie;FEMININ;ENS;False;Grand Est;Centre-Droite
+WOLFF Marc;MASCULIN;RN;False;Grand Est;Extrême-Droite
+SOTHER Thierry;MASCULIN;UG;True;Grand Est;Gauche
+FERNANDES Emmanuel;MASCULIN;UG;True;Grand Est;Gauche
+GNAEDIG Laurent;MASCULIN;RN;False;Grand Est;Extrême-Droite
+LEMAIRE Didier;MASCULIN;ENS;True;Grand Est;Centre-Droite
+AUBERT Nathalie;FEMININ;RN;False;Grand Est;Extrême-Droite
+WILHELM Marion;FEMININ;RN;False;Grand Est;Extrême-Droite
+RITZ Christelle;FEMININ;RN;False;Grand Est;Extrême-Droite
+BECHT Olivier;MASCULIN;ENS;True;Grand Est;Centre-Droite
+REYMBAUT Anne;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+PORTIER Alexandre;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+BITOUM Sasha;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+FUGIT Jean-Luc;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+GASSILLOUD Thomas;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+VINCENDET Alexandre;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+GAILLOT DURAND Lucie;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+BELOUASSA-CHERIFI Anaïs;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+MERMET Cédric;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BRET Jean-Paul;MASCULIN;DVG;False;Auvergne-Rhône-Alpes;Gauche
+PRANDT Victor;MASCULIN;UG;False;Auvergne-Rhône-Alpes;Gauche
+VILLEDIEU Antoine;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+MICHOUX Eric;MASCULIN;UXD;True;Bourgogne-Franche-Comté;Extrême-Droite
+DUTREMBLE Aurélien;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+CORNELOUP Josiane;FEMININ;LR;True;Bourgogne-Franche-Comté;Droite
+DREVET Rachel;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+PLATRET Gilles;MASCULIN;DVD;False;Bourgogne-Franche-Comté;Droite
+DE COSSÉ BRISSAC Céline;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+VAUGARNY Pierre;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+LE PEN Marie-Caroline;FEMININ;RN;False;Pays de la Loire;Extrême-Droite
+KARAMANLI Marietta;FEMININ;UG;True;Pays de la Loire;Gauche
+LEMOIGNE Romain;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+FERRARI Marina;FEMININ;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+RACT-BRANCAZ Pauline;FEMININ;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BERNARD Brice;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BONNIVARD Emilie;FEMININ;LR;True;Auvergne-Rhône-Alpes;Droite
+TAÏEB Quentin;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+ARMAND Antoine;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+RIOTTON Véronique;FEMININ;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+PETEX Christelle;FEMININ;DVD;True;Auvergne-Rhône-Alpes;Droite
+DUBY-MULLER Virginie;FEMININ;LR;True;Auvergne-Rhône-Alpes;Droite
+PRATS Charles;MASCULIN;UXD;False;Auvergne-Rhône-Alpes;Extrême-Droite
+PANOSYAN-BOUVET Astrid;FEMININ;ENS;True;Île-de-France;Centre-Droite
+BATUT Xavier;MASCULIN;HOR;False;Normandie;Centre-Droite
+POUSSIER-WINSBACK Marie-Agnès;FEMININ;HOR;True;Normandie;Centre-Droite
+MARTIN Patrice;MASCULIN;RN;True;Normandie;Extrême-Droite
+LANCELOT Vanessa;FEMININ;RN;False;Normandie;Extrême-Droite
+MONTIER Jean-Cyril;MASCULIN;RN;False;Normandie;Extrême-Droite
+DUFOUR Alma;FEMININ;UG;True;Normandie;Gauche
+THOMAS Anaïs;FEMININ;RN;False;Normandie;Extrême-Droite
+HOUDAN Grégoire;MASCULIN;RN;False;Normandie;Extrême-Droite
+LECOQ Jean-Paul;MASCULIN;UG;True;Normandie;Gauche
+BÉNARD Edouard;MASCULIN;UG;True;Normandie;Gauche
+VALLETOUX Frédéric;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+LIMONGI Julien;MASCULIN;RN;True;Île-de-France;Extrême-Droite
+THIERIOT Jean-Louis;MASCULIN;LR;True;Île-de-France;Droite
+LAFFITE Agnès;FEMININ;RN;False;Île-de-France;Extrême-Droite
+LUQUET Aude;FEMININ;ENS;False;Île-de-France;Centre-Droite
+ROULLAUD Béatrice;FEMININ;RN;True;Île-de-France;Extrême-Droite
+RIESTER Franck;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+VANACKER Morgann;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+BRACH Pryscillia;FEMININ;RN;False;Île-de-France;Extrême-Droite
+GHOMI Hadrien;MASCULIN;ENS;False;Île-de-France;Centre-Droite
+BRIOLAIS Cédric;MASCULIN;UG;False;Île-de-France;Gauche
+LELANDAIS Sophie;FEMININ;RN;False;Île-de-France;Extrême-Droite
+DIOP Dieynaba;FEMININ;UG;True;Île-de-France;Gauche
+METTELET Jean-Louis;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+HAI Nadia;FEMININ;ENS;False;Île-de-France;Centre-Droite
+SALVINO Valentin;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+MAZAURY Laurent;MASCULIN;UDI;True;Île-de-France;Droite
+LUCAS Benjamin;MASCULIN;UG;True;Île-de-France;Gauche
+BRAULT Gaetan;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+MOURTOUX Jean-François;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+RAMAGE Sébastien;MASCULIN;UG;False;Île-de-France;Gauche
+MYARD Jacques;MASCULIN;DVD;False;Île-de-France;Droite
+ROBIN Philippe;MASCULIN;UXD;False;Nouvelle-Aquitaine;Extrême-Droite
+GARAULT Mélody;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+CHAMPEAU Dorothée;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+RUFFIN François;MASCULIN;UG;True;Hauts-de-France;Gauche
+RENAULT Matthias;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+TANGUY Jean-Philippe;MASCULIN;RN;True;Hauts-de-France;Extrême-Droite
+DE JENLIS Hubert;MASCULIN;ENS;False;Hauts-de-France;Centre-Droite
+CARAYON Guilhem;MASCULIN;UXD;False;Occitanie;Extrême-Droite
+BONNECARRERE Philippe;MASCULIN;DVC;True;Occitanie;Centre
+BACOU Julien;MASCULIN;RN;False;Occitanie;Extrême-Droite
+HAMELET Marine;FEMININ;RN;True;Occitanie;Extrême-Droite
+RABAULT Valérie;FEMININ;UG;False;Occitanie;Gauche
+MUSCHOTTI Cécile;FEMININ;ENS;False;Provence-Alpes-Côte d'Azur;Centre-Droite
+MONFORT Isabelle;FEMININ;ENS;False;Provence-Alpes-Côte d'Azur;Centre-Droite
+CHENEVARD Yannick;MASCULIN;ENS;True;Provence-Alpes-Côte d'Azur;Centre-Droite
+CELCE Céline;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+ARNAULT Raphaël;MASCULIN;UG;True;Provence-Alpes-Côte d'Azur;Gauche
+GALVEZ Monia;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+BLANES Patrick;MASCULIN;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+BUCHOU Stéphane;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+PAULIN Simon-Pierre;MASCULIN;UXD;False;Pays de la Loire;Extrême-Droite
+BELLAMY Béatrice;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+HENRIET Pierre;MASCULIN;ENS;True;Pays de la Loire;Centre-Droite
+PROUX Jacques;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+SOULAT Eric;MASCULIN;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+SAINT-PÉ Séverine;FEMININ;HOR;False;Nouvelle-Aquitaine;Centre-Droite
+JACQUEMIN Hager;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+SOUMAILLE Valérie;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+MINGUET Sabrina;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+NEGRIER Isabelle;FEMININ;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+TOULZA Gilles;MASCULIN;DVC;False;Nouvelle-Aquitaine;Centre
+HUMBERT Sébastien;MASCULIN;RN;True;Grand Est;Extrême-Droite
+VALENCE David;MASCULIN;ENS;False;Grand Est;Centre-Droite
+VIRY Stéphane;MASCULIN;DVD;True;Grand Est;Droite
+FRESSE Pauline;FEMININ;RN;False;Grand Est;Extrême-Droite
+VILLIERS André;MASCULIN;ENS;False;Bourgogne-Franche-Comté;Centre-Droite
+GRENON Daniel;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+BOUCARD Ian;MASCULIN;LR;True;Bourgogne-Franche-Comté;Droite
+BIGOT Guillaume;MASCULIN;RN;True;Bourgogne-Franche-Comté;Extrême-Droite
+DA CONCEICAO CARVALHO Nathalie;FEMININ;RN;True;Île-de-France;Extrême-Droite
+GUSTAVE Steevy;MASCULIN;UG;True;Île-de-France;Gauche
+REDA Robin;MASCULIN;ENS;False;Île-de-France;Centre-Droite
+CARBRIAND Jérôme;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+MIDY Paul;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+AMRANI Farida;FEMININ;UG;True;Île-de-France;Gauche
+OZENNE Julie;FEMININ;UG;True;Île-de-France;Gauche
+DUPONT-AIGNAN Nicolas;MASCULIN;DSV;False;Île-de-France;Extrême-Droite
+GOUPY Natacha;FEMININ;RN;False;Île-de-France;Extrême-Droite
+AMAND Michael;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+BREGEON Maud;FEMININ;ENS;True;Île-de-France;Centre-Droite
+LAM Thomas;MASCULIN;LR;True;Île-de-France;Droite
+RAPILLY-FERNIOT Pauline;FEMININ;UG;False;Île-de-France;Gauche
+ADJROUD Lounes;MASCULIN;UG;False;Île-de-France;Gauche
+NICOLAS-CHAVANCE Salomé;FEMININ;UG;False;Île-de-France;Gauche
+CALVEZ Céline;FEMININ;ENS;True;Île-de-France;Centre-Droite
+LE GRIP Constance;FEMININ;ENS;True;Île-de-France;Centre-Droite
+SOUBELET Cécile;FEMININ;UG;False;Île-de-France;Gauche
+DE CRECY Isabelle;FEMININ;ENS;False;Île-de-France;Centre-Droite
+ALI-BENALI Sabrina;FEMININ;UG;False;Île-de-France;Gauche
+AWAD Mohamed;MASCULIN;FI;False;Île-de-France;Gauche-Radicale
+DIOUARA Aly;MASCULIN;UG;True;Île-de-France;Gauche
+PERIER Jean-François;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+KELOUA HACHI Fatiha;FEMININ;UG;True;Île-de-France;Gauche
+CRETIN-GIELLY Denis;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+SIGNOR Loïc;MASCULIN;ENS;False;Île-de-France;Centre-Droite
+BERRIOS Sylvain;MASCULIN;DVD;True;Île-de-France;Droite
+HUGUENIN-RICHARD Isabelle;FEMININ;RN;False;Île-de-France;Extrême-Droite
+HERBILLON Michel;MASCULIN;LR;True;Île-de-France;Droite
+AMARA Adel;MASCULIN;UG;False;Île-de-France;Gauche
+JEANBRUN Vincent;MASCULIN;LR;True;Île-de-France;Droite
+GOUFFIER VALENTE Guillaume;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+SICARD Anne;FEMININ;RN;True;Île-de-France;Extrême-Droite
+CATHALA Gabrielle;FEMININ;UG;True;Île-de-France;Gauche
+HADIZADEH Ayda;FEMININ;UG;True;Île-de-France;Gauche
+QUENTIN David;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+MAUREL Emmanuel;MASCULIN;UG;True;Île-de-France;Gauche
+LE GALL Arnaud;MASCULIN;UG;True;Île-de-France;Gauche
+MACÉ Lisbeth;FEMININ;RN;False;Île-de-France;Extrême-Droite
+MOUTCHOU Naïma;FEMININ;ENS;True;Île-de-France;Centre-Droite
+LERUS Chantal;FEMININ;DVG;False;Outre-Mer;Gauche
+PETIT Laurent;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+TOLASSY Rody;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+LINON Jennifer;FEMININ;DVC;False;Outre-Mer;Centre
+MONPLAISIR Yan;MASCULIN;DVD;False;Outre-Mer;Droite
+ROY-LARENTRY Grégory Michel;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+HAJJAR Johnny;MASCULIN;DVG;False;Outre-Mer;Gauche
+WILLIAM Jiovanny;MASCULIN;REG;True;Outre-Mer;Autres
+CHONG SIT Boris;MASCULIN;DVD;False;Outre-Mer;Droite
+POUDROUX Jean-Luc;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+DORO Joan;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+CHAUSSALET Alexis;MASCULIN;DVG;False;Outre-Mer;Gauche
+RIVIERE Jonathan;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+LEBON Karine;FEMININ;UG;True;Outre-Mer;Gauche
+MOREL Jean Jacques;MASCULIN;RN;False;Outre-Mer;Extrême-Droite
+LEGROS Valérie;FEMININ;RN;False;Outre-Mer;Extrême-Droite
+BEAUMONT Frédéric;MASCULIN;SOC;False;Outre-Mer;Gauche
+BAMANA Anchya;FEMININ;RN;True;Outre-Mer;Extrême-Droite
+HAITI EPOUSE FLOSSE Pascale;FEMININ;DVD;False;Outre-Mer;Droite
+CHAILLOUX Steve;MASCULIN;UG;False;Outre-Mer;Gauche
+PONGA Alcide;MASCULIN;DVD;False;Outre-Mer;Droite
+NAISSELINE Omayra Lisa Meun;FEMININ;REG;False;Outre-Mer;Autres
+GUMBS Frantz;MASCULIN;DVC;True;Outre-Mer;Centre
+BEN CHEÏKH Karim;MASCULIN;UG;True;Étranger;Gauche
+DI MEO Elsa;FEMININ;UG;False;Étranger;Gauche
+GENETET Anne;FEMININ;ENS;True;Étranger;Centre-Droite
+ANGLADE Pieyre-Alexandre;MASCULIN;ENS;True;Étranger;Centre-Droite
+VOJETTA Stéphane;MASCULIN;DVC;True;Étranger;Centre
+YADAN Caroline;FEMININ;ENS;True;Étranger;Centre-Droite
+CORONADO Sergio;MASCULIN;UG;False;Étranger;Gauche
+LARAICHI Oussama;MASCULIN;UG;False;Étranger;Gauche
+RHARMAOUI-CLAQUIN Asma;FEMININ;UG;False;Étranger;Gauche
+CAURE Vincent;MASCULIN;ENS;True;Étranger;Centre-Droite
+DELIMI Halima;FEMININ;UG;False;Étranger;Gauche
+HERITIER Louise;FEMININ;UG;False;Auvergne-Rhône-Alpes;Gauche
+MONETTI Graig;MASCULIN;ENS;False;Provence-Alpes-Côte d'Azur;Centre-Droite
+GRANGIER Cyrille;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+PETEL Anne-Laurence;FEMININ;ENS;False;Provence-Alpes-Côte d'Azur;Centre-Droite
+LHARDIT Laurent;MASCULIN;UG;True;Provence-Alpes-Côte d'Azur;Gauche
+LATUS Marion;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+POUGET Maïtey;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+HUMBLOT-CORNILLE Cyline;FEMININ;RN;False;Bourgogne-Franche-Comté;Extrême-Droite
+LEMAITRE Marielle;FEMININ;UG;False;Bretagne;Gauche
+BILLAUD Françoise;FEMININ;RN;False;Bretagne;Extrême-Droite
+COUTURIER Catherine;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+CROIZIER Laurent;MASCULIN;ENS;True;Bourgogne-Franche-Comté;Centre-Droite
+MONNIER Thibaut;MASCULIN;RN;True;Auvergne-Rhône-Alpes;Extrême-Droite
+HARVINDER Jugdeep;FEMININ;UG;False;Bretagne;Gauche
+HÉNAFF Christel;FEMININ;RN;False;Bretagne;Extrême-Droite
+KERVELLA Denis;MASCULIN;RN;False;Bretagne;Extrême-Droite
+LE FEUR Sandrine;FEMININ;ENS;True;Bretagne;Centre-Droite
+LAGLEIZE Jean-Luc;MASCULIN;ENS;False;Occitanie;Centre-Droite
+ROBY Agathe;FEMININ;UG;False;Occitanie;Gauche
+CHAMBELIN Lola;FEMININ;RN;False;Occitanie;Extrême-Droite
+BEOUT Caroline;FEMININ;RN;False;Occitanie;Extrême-Droite
+PRUD'HOMME Loïc;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+THIERRY Nicolas;MASCULIN;UG;True;Nouvelle-Aquitaine;Gauche
+PAPIN Céline;FEMININ;UG;False;Nouvelle-Aquitaine;Gauche
+COUILLARD Bérangère;FEMININ;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+RECALDE Marie;FEMININ;UG;True;Nouvelle-Aquitaine;Gauche
+CROZIER Magali;FEMININ;UG;False;Occitanie;Gauche
+LAHAIS Tristan;MASCULIN;UG;True;Bretagne;Gauche
+ROUAUX Claudia;FEMININ;UG;True;Bretagne;Gauche
+REY DU BOISSIEU Jeanne;FEMININ;RN;False;Bretagne;Extrême-Droite
+FOURNIER Charles;MASCULIN;UG;True;Centre-Val de Loire;Gauche
+VÉRAN Olivier;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+VERMOREL-MARQUES Antoine;MASCULIN;LR;True;Auvergne-Rhône-Alpes;Droite
+RAUX Jean-Claude;MASCULIN;UG;True;Pays de la Loire;Gauche
+ERRANTE Sophie;FEMININ;ENS;True;Pays de la Loire;Centre-Droite
+LAERNOES Julie;FEMININ;UG;True;Pays de la Loire;Gauche
+COMBY Bruno;MASCULIN;UXD;False;Pays de la Loire;Extrême-Droite
+ANNEREAU Matthieu;MASCULIN;ENS;False;Pays de la Loire;Centre-Droite
+BENBRAHIM Karim;MASCULIN;UG;True;Pays de la Loire;Gauche
+MIHAYLOVA Slavka;FEMININ;RN;False;Occitanie;Extrême-Droite
+BLANCHET Gérard Raymond;MASCULIN;RN;False;Occitanie;Extrême-Droite
+PANTEL Sophie;FEMININ;UG;True;Occitanie;Gauche
+JOUANNEAU Guillaume;MASCULIN;UG;False;Pays de la Loire;Gauche
+BRISSEAU Thomas;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+LOUVIGNE Hugo;MASCULIN;RN;False;Pays de la Loire;Extrême-Droite
+MOREAU France;FEMININ;UG;False;Pays de la Loire;Gauche
+HABLOT Stéphane;MASCULIN;UG;True;Grand Est;Gauche
+LE GOFF Aurélie;FEMININ;RN;False;Bretagne;Extrême-Droite
+SALANON Violette;FEMININ;ENS;False;Hauts-de-France;Centre-Droite
+VIDAL-SAGNIER Odile;FEMININ;UG;False;Hauts-de-France;Gauche
+BRUN Charlotte;FEMININ;UG;False;Hauts-de-France;Gauche
+CHOUIA Karima;FEMININ;UG;False;Hauts-de-France;Gauche
+PEN Loïc;MASCULIN;UG;False;Hauts-de-France;Gauche
+BONNET Nicolas;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+CLEMENT Louis;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+LOPEZ Sylviane;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+DEVÈZE Christian;MASCULIN;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+DÔ Stéphanie;FEMININ;RN;False;Grand Est;Extrême-Droite
+BREITMAN Rebecca;FEMININ;ENS;False;Grand Est;Centre-Droite
+SERRE Nathalie;FEMININ;LR;False;Auvergne-Rhône-Alpes;Droite
+MATTEUCCI Fabrice;MASCULIN;UG;False;Auvergne-Rhône-Alpes;Gauche
+PIGNAL Cédric;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+ISAAC-SIBILLE Cyrille;MASCULIN;ENS;True;Auvergne-Rhône-Alpes;Centre-Droite
+RUDIGOZ Thomas;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+KOURICHE Fatima;FEMININ;UG;False;Bourgogne-Franche-Comté;Gauche
+GUERINI Stanislas;MASCULIN;ENS;False;Île-de-France;Centre-Droite
+ADAM Damien;MASCULIN;ENS;False;Normandie;Centre-Droite
+MICHEL Théo;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+MOURGERES Manon;FEMININ;RN;False;Île-de-France;Extrême-Droite
+DU CHALARD Thomas;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+POUZYREFF Natalia;FEMININ;ENS;True;Île-de-France;Centre-Droite
+OLIVE Karl;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+ROUSSEAU Aurélien;MASCULIN;UG;True;Île-de-France;Gauche
+BOURDON Céline;FEMININ;UG;False;Île-de-France;Gauche
+JACQMIN Anne;FEMININ;RN;False;Île-de-France;Extrême-Droite
+BRAUN-PIVET Yaël;FEMININ;ENS;True;Île-de-France;Centre-Droite
+MARCHIVE Bastien;MASCULIN;DVC;True;Nouvelle-Aquitaine;Centre
+HAMDANE Zahia;FEMININ;UG;True;Hauts-de-France;Gauche
+BESSE Véronique;FEMININ;DVD;True;Pays de la Loire;Droite
+BELLUCO Lisa;FEMININ;UG;True;Nouvelle-Aquitaine;Gauche
+HOULIÉ Sacha;MASCULIN;ENS;True;Nouvelle-Aquitaine;Centre-Droite
+DOS SANTOS DE OLIVEIRA Camille;FEMININ;RN;False;Nouvelle-Aquitaine;Extrême-Droite
+MEUNIER Manon;FEMININ;UG;True;Nouvelle-Aquitaine;Gauche
+LEJEUNE Claire;FEMININ;UG;True;Île-de-France;Gauche
+VEGA Thiebauld;MASCULIN;RN;False;Île-de-France;Extrême-Droite
+CERNON Bérenger;MASCULIN;UG;True;Île-de-France;Gauche
+MUSCIANISI Sihame;FEMININ;UG;False;Île-de-France;Gauche
+BOYARD Louis;MASCULIN;UG;True;Île-de-France;Gauche
+SABOURIN Anne-Gaëlle;FEMININ;RN;False;Île-de-France;Extrême-Droite
+LEFEVRE Mathieu;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+PETIT Maud;FEMININ;ENS;True;Île-de-France;Centre-Droite
+CHANDLER Émilie;FEMININ;ENS;False;Île-de-France;Centre-Droite
+BRUNA Annika;FEMININ;RN;False;Île-de-France;Extrême-Droite
+FAYSSAT Olivier;MASCULIN;UXD;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+TAURINYA Andrée;FEMININ;UG;True;Auvergne-Rhône-Alpes;Gauche
+DESPRAS Dominique;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+CHAUMONT Yannick;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+GREGOIRE Olivia;FEMININ;ENS;True;Île-de-France;Centre-Droite
+NAGNONHOU Ilias;MASCULIN;ENS;False;Pays de la Loire;Centre-Droite
+CIOTTI Eric;MASCULIN;UXD;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+GRISETI Monique;FEMININ;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+TERRENES Loïc;MASCULIN;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+HADDAD Benjamin;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+RIOULT Olivier;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+MOUTON Laurent;MASCULIN;RN;False;Auvergne-Rhône-Alpes;Extrême-Droite
+BALAGE EL MARIKY Léa;FEMININ;UG;True;Île-de-France;Gauche
+LIQUORI Franck;MASCULIN;RN;False;Provence-Alpes-Côte d'Azur;Extrême-Droite
+JURAMY Véronique;FEMININ;ENS;False;Nouvelle-Aquitaine;Centre-Droite
+LOOS Etienne;MASCULIN;ENS;False;Grand Est;Centre-Droite
+TAVERNIER Boris;MASCULIN;UG;True;Auvergne-Rhône-Alpes;Gauche
+HERVIEU Céline;FEMININ;UG;True;Île-de-France;Gauche
+LELOUIS Gisèle;FEMININ;RN;True;Provence-Alpes-Côte d'Azur;Extrême-Droite
+REGOL Sandra;FEMININ;UG;True;Grand Est;Gauche
+BRUGNERA Anne;FEMININ;ENS;False;Auvergne-Rhône-Alpes;Centre-Droite
+MALAISÉ Celine;FEMININ;UG;False;Île-de-France;Gauche
+DAVI Hendrik;MASCULIN;DVG;True;Provence-Alpes-Côte d'Azur;Gauche
+PIQUET Louis;MASCULIN;UXD;False;Île-de-France;Extrême-Droite
+JUSTE Christine;FEMININ;UG;False;Provence-Alpes-Côte d'Azur;Gauche
+MAILLARD Sylvain;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+AMIEL David;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+LAUSSUCQ Jean;MASCULIN;ENS;True;Île-de-France;Centre-Droite
+GATEL Maud;FEMININ;ENS;False;Île-de-France;Centre-Droite
+SIMONNET Danielle;FEMININ;DVG;True;Île-de-France;Gauche
+NIAKATÉ Aminata;FEMININ;UG;False;Île-de-France;Gauche
+BOULARD Geoffroy;MASCULIN;DVD;False;Île-de-France;Droite
+VERZELETTI Céline;FEMININ;UG;False;Île-de-France;Gauche
+ROSSET Marine;FEMININ;UG;False;Île-de-France;Gauche

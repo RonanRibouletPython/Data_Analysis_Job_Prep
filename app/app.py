@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px  # Import Plotly Express
+import plotly.express as px
+import os
 
 COLOR_PALETTE = {
     "Burgundy": "#803D3B",
@@ -8,7 +9,129 @@ COLOR_PALETTE = {
     "Cream": "#E4C59E",
 }
 
-# Dashboard Streamlit configuration MUST be the FIRST command
+# Color palette for party tendencies
+palette_nuances = {
+                    'Gauche-Radicale': '#E4572E',
+                    'Gauche': '#FE4A49', 
+                    "Centre": "#B1EDE8", 
+                    "Centre-Droite": "#4EA5FF",
+                    "Droite": "#207BFF",
+                    "Extrême-Droite": "#053C5E",
+                    "Autres": "#773344",  
+                }
+
+# Use mapping to add the regions of the departement
+departements_regions = {
+    "01": "Auvergne-Rhône-Alpes",
+    "02": "Hauts-de-France",
+    "03": "Auvergne-Rhône-Alpes",
+    "04": "Provence-Alpes-Côte d'Azur",
+    "05": "Provence-Alpes-Côte d'Azur",
+    "06": "Provence-Alpes-Côte d'Azur",
+    "07": "Auvergne-Rhône-Alpes",
+    "08": "Grand Est",
+    "09": "Occitanie",
+    "10": "Grand Est",
+    "11": "Occitanie",
+    "12": "Occitanie",
+    "13": "Provence-Alpes-Côte d'Azur",
+    "14": "Normandie",
+    "15": "Auvergne-Rhône-Alpes",
+    "16": "Nouvelle-Aquitaine",
+    "17": "Nouvelle-Aquitaine",
+    "18": "Centre-Val de Loire",
+    "19": "Nouvelle-Aquitaine",
+    "2A": "Corse",
+    "2B": "Corse",
+    "21": "Bourgogne-Franche-Comté",
+    "22": "Bretagne",
+    "23": "Nouvelle-Aquitaine",
+    "24": "Nouvelle-Aquitaine",
+    "25": "Bourgogne-Franche-Comté",
+    "26": "Auvergne-Rhône-Alpes",
+    "27": "Normandie",
+    "28": "Centre-Val de Loire",
+    "29": "Bretagne",
+    "30": "Occitanie",
+    "31": "Occitanie",
+    "32": "Occitanie",
+    "33": "Nouvelle-Aquitaine",
+    "34": "Occitanie",
+    "35": "Bretagne",
+    "36": "Centre-Val de Loire",
+    "37": "Centre-Val de Loire",
+    "38": "Auvergne-Rhône-Alpes",
+    "39": "Bourgogne-Franche-Comté",
+    "40": "Nouvelle-Aquitaine",
+    "41": "Centre-Val de Loire",
+    "42": "Auvergne-Rhône-Alpes",
+    "43": "Auvergne-Rhône-Alpes",
+    "44": "Pays de la Loire",
+    "45": "Centre-Val de Loire",
+    "46": "Occitanie",
+    "47": "Nouvelle-Aquitaine",
+    "48": "Occitanie",
+    "49": "Pays de la Loire",
+    "50": "Normandie",
+    "51": "Grand Est",
+    "52": "Grand Est",
+    "53": "Pays de la Loire",
+    "54": "Grand Est",
+    "55": "Grand Est",
+    "56": "Bretagne",
+    "57": "Grand Est",
+    "58": "Bourgogne-Franche-Comté",
+    "59": "Hauts-de-France",
+    "60": "Hauts-de-France",
+    "61": "Normandie",
+    "62": "Hauts-de-France",
+    "63": "Auvergne-Rhône-Alpes",
+    "64": "Nouvelle-Aquitaine",
+    "65": "Occitanie",
+    "66": "Occitanie",
+    "67": "Grand Est",
+    "68": "Grand Est",
+    "69": "Auvergne-Rhône-Alpes",
+    "70": "Bourgogne-Franche-Comté",
+    "71": "Bourgogne-Franche-Comté",
+    "72": "Pays de la Loire",
+    "73": "Auvergne-Rhône-Alpes",
+    "74": "Auvergne-Rhône-Alpes",
+    "75": "Île-de-France",
+    "76": "Normandie",
+    "77": "Île-de-France",
+    "78": "Île-de-France",
+    "79": "Nouvelle-Aquitaine",
+    "80": "Hauts-de-France",
+    "81": "Occitanie",
+    "82": "Occitanie",
+    "83": "Provence-Alpes-Côte d'Azur",
+    "84": "Provence-Alpes-Côte d'Azur",
+    "85": "Pays de la Loire",
+    "86": "Nouvelle-Aquitaine",
+    "87": "Nouvelle-Aquitaine",
+    "88": "Grand Est",
+    "89": "Bourgogne-Franche-Comté",
+    "90": "Bourgogne-Franche-Comté",
+    "91": "Île-de-France",
+    "92": "Île-de-France",
+    "93": "Île-de-France",
+    "94": "Île-de-France",
+    "95": "Île-de-France",
+    "971": "Outre-Mer",
+    "972": "Outre-Mer",
+    "973": "Outre-Mer",
+    "974": "Outre-Mer",
+    "975": "Outre-Mer",
+    "976": "Outre-Mer",
+    "987": "Outre-Mer",
+    "988": "Outre-Mer",
+    "ZX": "Outre-Mer",
+    "ZZ": "Étranger",  
+}
+
+
+# --- Streamlit Page configuration ---
 st.set_page_config(
     page_title="French Legislative Election Second Round Analysis",
     page_icon="french_flag_icon.png",
@@ -18,18 +141,25 @@ st.set_page_config(
 
 # --- Data Loading and Preprocessing ---
 @st.cache_data  # Cache the data to speed up app loading
-def load_data():
-    df = pd.read_csv("../Clean_Data/2024/clean_dataset_legislative_2024.csv", sep=";")
-    df = df.rename(columns={"Votants": "Voters", 
-                           "Abstentions": "Abstentionists", 
-                           "Inscrits": "Registered",
-                           "Exprimés": "Cast",
-                           "Blancs": "Blank",
-                           "Nuls": "Invalid",
-                           })
+def load_data_from_csv(file_path: str, separator: str)-> pd.DataFrame:
+    if not os.path.splitext(file_path)[1].lower() == '.csv':
+        raise ValueError(f"Invalid file type: {file_path} is not a CSV file.")
+    
+    df = pd.read_csv(file_path, sep=separator)
+
     return df
 
-df = load_data()
+df = load_data_from_csv(file_path="../Clean_Data/2024/clean_dataset_legislative_2024.csv", separator=";")
+df = df.rename(columns={"Votants": "Voters", 
+                        "Abstentions": "Abstentions", 
+                        "Inscrits": "Registered",
+                        "Exprimés": "Cast",
+                        "Blancs": "Blank",
+                        "Nuls": "Invalid",
+                    })
+
+df_unique_candidates = load_data_from_csv("../Clean_Data/2024/candidates_legislative_2024.csv", separator=";")
+df_unique_candidates.head(10)
 
 # --- Streamlit App ---
 
@@ -58,7 +188,10 @@ def national_analysis():
 
         total_registered = df["Registered"].sum()
         total_voters = df["Voters"].sum()
-        total_abstentionists = df["Abstentionists"].sum()
+        total_abstentions = df["Abstentions"].sum()
+        
+        # Display the subtitle of the Voter Turnout
+        st.subheader("National Voter Turnout Analysis")
 
         # --- Layout for Key Metrics ---
         col1, col2, col3 = st.columns(3)
@@ -67,7 +200,7 @@ def national_analysis():
         with col2:
             st.metric("Total Voters", f"{total_voters:,}")
         with col3:
-            st.metric("Total Abstentionists", f"{total_abstentionists:,}")
+            st.metric("Total Abstentions", f"{total_abstentions:,}")
 
         st.markdown("---")  # Horizontal separator
 
@@ -77,10 +210,10 @@ def national_analysis():
         # --- Barplot using Plotly Express ---
         with col4:
             fig = px.bar(
-                x=['Voters', 'Abstentionists'],
-                y=[total_voters, total_abstentionists],
-                color=['Voters', 'Abstentionists'],
-                color_discrete_map={'Voters': COLOR_PALETTE["Burgundy"], 'Abstentionists': COLOR_PALETTE["Cream"]},
+                x=['Voters', 'Abstentions'],
+                y=[total_voters, total_abstentions],
+                color=['Voters', 'Abstentions'],
+                color_discrete_map={'Voters': COLOR_PALETTE["Burgundy"], 'Abstentions': COLOR_PALETTE["Cream"]},
                 title="Distribution of Voters and Abstentions"
             )
             fig.update_layout(
@@ -94,10 +227,11 @@ def national_analysis():
         # --- Pie Chart using Plotly Express ---
         with col5:
             fig = px.pie(
-                values=[total_voters, total_abstentionists],
-                names=['Voters', 'Abstentionists'],
+                values=[total_voters, total_abstentions],
+                names=['Voters', 'Abstentions'],
                 title="Voter Turnout Proportion",
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3 
             )
             fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
             st.plotly_chart(fig)
@@ -105,8 +239,11 @@ def national_analysis():
         total_cast = df["Cast"].sum()
         total_blank  = df["Blank"].sum()
         total_invalid  = df["Invalid"].sum()
+        
+        # Display the subtitle of the Ballot Analysis
+        st.subheader("National Ballot Analysis")
             
-            # --- Layout for Key Metrics ---
+        # --- Layout for Key Metrics ---
         col6, col7, col8 = st.columns(3)
         with col6:
             st.metric("Total Votes Cast", f"{total_cast:,}")
@@ -114,6 +251,7 @@ def national_analysis():
             st.metric("Total Votes Blank", f"{total_blank:,}")
         with col8:
             st.metric("Total Votes Invalid", f"{total_invalid:,}")
+        
         
         st.markdown("---")  # Horizontal separator
         
@@ -127,11 +265,11 @@ def national_analysis():
                 y=[total_cast, total_blank, total_invalid],
                 color=['Cast', 'Blank', 'Invalid'],
                 color_discrete_map={'Cast': COLOR_PALETTE["Burgundy"], 'Blank': COLOR_PALETTE["Coffee"], "Invalid": COLOR_PALETTE["Cream"]},
-                title="Distribution of Voters and Abstentions"
+                title="Distribution of Cast, Blank, and Invalid Votes"
             )
             fig.update_layout(
-                xaxis_title="Voting Status",
-                yaxis_title="Number of Registered People",
+                xaxis_title="Vote Status",
+                yaxis_title="Number of Votes",
                 yaxis_tickformat=",",
                 plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
             )
@@ -142,15 +280,98 @@ def national_analysis():
             fig = px.pie(
                 values=[total_cast, total_blank, total_invalid],
                 names=['Cast', 'Blank', 'Invalid'],
-                title="Voter Turnout Proportion",
+                title="Proportion of Cast, Blank, and Invalid Votes",
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
+                hole=0.3
             )
             fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
             st.plotly_chart(fig)
     
     if analysis_type == "Candidate Analysis":
         st.title("French Legislative Election: Candidate Analysis")
+
+        total_candidates = df_unique_candidates["Nom_complet"].value_counts().sum()
+        male_candidates = df_unique_candidates["Sexe"].value_counts()["MASCULIN"]
+        female_candidates = df_unique_candidates["Sexe"].value_counts()["FEMININ"]
         
+        # Display the subtitle of the Ballot Analysis
+        st.subheader("Candidate Gender Analysis")
+        
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Candidates", f"{total_candidates:,}")
+        with col2:
+            st.metric("Total Male Candidates", f"{male_candidates:,}")
+        with col3:
+            st.metric("Total Female Candidates", f"{female_candidates:,}")
+
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Male', 'Female'],
+                y=[male_candidates, female_candidates],
+                color=['Male', 'Female'],
+                color_discrete_map={'Male': COLOR_PALETTE["Burgundy"], 'Female': COLOR_PALETTE["Cream"]},
+                title="Distribution of Candidates Gender"
+            )
+            fig.update_layout(
+                xaxis_title="Gender of the Candidates",
+                yaxis_title="Number of Candidates",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[male_candidates, female_candidates],
+                names=['Male', 'Female'],
+                title="Proportion of Candidates Genders",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            st.plotly_chart(fig)    
+        
+        # Display the subtitle of the Candidate Affiliations
+        st.subheader("Overview of French Legislative Candidate Affiliations")
+        
+        total_parties = df_unique_candidates["Nuance"].nunique()
+        st.metric("Total Number of Parties or Political Alliances", f"{total_parties}")
+        
+        parties_plot_order = ['FI', 'ECO', 'UG',  'SOC', 'DVG', 'DVC', 'ENS', 'HOR', 'DVD', 'LR', 'UDI', 'UDI', 'RN', 'UXD', 'EXD', 'DSV', 'REG', 'DIV']
+        
+        st.markdown("---")  # Horizontal separator
+        
+        fig = px.histogram(df_unique_candidates, 
+                        x="Nuance", 
+                        color="Tendency", 
+                        color_discrete_map=palette_nuances,
+                        title="Distribution of French Legislative Candidates by Party and Tendency",
+                        category_orders={"Nuance": parties_plot_order})
+
+        # Customize layout
+        fig.update_layout(
+            xaxis_title="Political parties",
+            yaxis_title="Number of Candidates",
+            showlegend=True,
+            plot_bgcolor='white'  # Set background color to white
+        )
+
+        # Add text annotations for counts
+        fig.update_traces(texttemplate='%{y}', textposition='outside')
+
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+ 
         
     
 
