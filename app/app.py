@@ -290,9 +290,11 @@ def national_analysis():
     if analysis_type == "Candidate Analysis":
         st.title("French Legislative Election: Candidate Analysis")
 
+        tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
         total_candidates = df_unique_candidates["Nom_complet"].value_counts().sum()
         male_candidates = df_unique_candidates["Sexe"].value_counts()["MASCULIN"]
         female_candidates = df_unique_candidates["Sexe"].value_counts()["FEMININ"]
+        tendency_count = df_unique_candidates["Tendency"].value_counts()
         
         # Display the subtitle of the Ballot Analysis
         st.subheader("Candidate Gender Analysis")
@@ -337,6 +339,7 @@ def national_analysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
                 hole=0.3
             )
+
             fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
             st.plotly_chart(fig)    
         
@@ -346,8 +349,6 @@ def national_analysis():
         total_parties = df_unique_candidates["Nuance"].nunique()
         st.metric("Total Number of Parties or Political Alliances", f"{total_parties}")
         
-        parties_plot_order = ['FI', 'ECO', 'UG',  'SOC', 'DVG', 'DVC', 'ENS', 'HOR', 'DVD', 'LR', 'UDI', 'UDI', 'RN', 'UXD', 'EXD', 'DSV', 'REG', 'DIV']
-        
         st.markdown("---")  # Horizontal separator
         
         fig = px.histogram(df_unique_candidates, 
@@ -355,14 +356,15 @@ def national_analysis():
                         color="Tendency", 
                         color_discrete_map=palette_nuances,
                         title="Distribution of French Legislative Candidates by Party and Tendency",
-                        category_orders={"Nuance": parties_plot_order})
+                        category_orders={"Tendency": tendencies_plot_order})
 
         # Customize layout
         fig.update_layout(
             xaxis_title="Political parties",
             yaxis_title="Number of Candidates",
             showlegend=True,
-            plot_bgcolor='white'  # Set background color to white
+            plot_bgcolor='white',
+            legend_title_text='Tendencies'
         )
 
         # Add text annotations for counts
@@ -371,9 +373,31 @@ def national_analysis():
         # Display the chart using Streamlit
         st.plotly_chart(fig)
         
- 
+        # Create the semi-donut chart
+        fig = px.pie(
+            tendency_count, 
+            values='count', 
+            names=tendency_count.index,
+            color=tendency_count.index,
+            color_discrete_map=palette_nuances,  
+            hole=0.5, 
+            title='Distribution of Political Tendencies' ,
+            category_orders={"Tendency": tendencies_plot_order},
+            
+        ) 
         
-    
+        fig.update_layout(
+            showlegend=True,  # Display the legend
+            legend_title_text='Tendencies'
+        )
+        fig.update_traces(textinfo='percent',
+                        pull=[0.05, 0], 
+                        rotation=180,
+                        )  
+
+        
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
 
 def regionAnalysis():
     st.title("Analysis of a specific region")
