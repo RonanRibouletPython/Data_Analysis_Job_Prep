@@ -889,10 +889,260 @@ def regionAnalysis():
     
 
 def departmentAnalysis():
-    st.title("Analysis of a specific department")
+    regions = df['Libellé_Région'].unique()
+    selected_region = st.selectbox("Select Region", regions)
+    
+    filtered_region_df = df[df['Libellé_Région'] == selected_region]
+    
+    departements = filtered_region_df['Libellé_département'].unique()
+    selected_departement = st.selectbox("Select Region", departements)
+    
+    # Filter the DataFrame
+    filtered_department_df = df[df['Libellé_département'] == selected_departement]
+    
+    filtered_department_df = filtered_department_df.rename(columns={"Votants": "Voters", 
+                        "Abstentions": "Abstentions", 
+                        "Inscrits": "Registered",
+                        "Exprimés": "Cast",
+                        "Blancs": "Blank",
+                        "Nuls": "Invalid",
+                    })
+    
+    
+    st.title(f"Analysis of a specific department")
+    
+    # Button to select analysis type
+    analysis_type = st.selectbox("Select Analysis Type:", ["Vote Analysis", "Candidate Analysis", "Result Analysis"])
+    
+    if analysis_type == "Vote Analysis":
+        st.title(f"French Legislative Election: Departmental Voter Turnout and Ballot Analysis in {selected_departement}")
+
+        total_registered = filtered_department_df["Registered"].sum()
+        total_voters = filtered_department_df["Voters"].sum()
+        total_abstentions = filtered_department_df["Abstentions"].sum()
+        
+        # Display the subtitle of the Voter Turnout
+        st.subheader(f"Departmental Voter Turnout Analysis in {selected_departement}")
+
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Registered Voters", f"{total_registered:,}")
+        with col2:
+            st.metric("Total Voters", f"{total_voters:,}")
+        with col3:
+            st.metric("Total Abstentions", f"{total_abstentions:,}")
+
+        st.markdown("---")  # Horizontal separator
+
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Voters', 'Abstentions'],
+                y=[total_voters, total_abstentions],
+                color=['Voters', 'Abstentions'],
+                color_discrete_map={'Voters': COLOR_PALETTE["Burgundy"], 'Abstentions': COLOR_PALETTE["Cream"]},
+                title="Distribution of Voters and Abstentions"
+            )
+            fig.update_layout(
+                xaxis_title="Voting Status",
+                yaxis_title="Number of Registered People",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[total_voters, total_abstentions],
+                names=['Voters', 'Abstentions'],
+                title="Voter Turnout Proportion",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3 
+            )
+            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            st.plotly_chart(fig)
+            
+        total_cast = filtered_department_df["Cast"].sum()
+        total_blank  = filtered_department_df["Blank"].sum()
+        total_invalid  = filtered_department_df["Invalid"].sum()
+        
+        # Display the subtitle of the Ballot Analysis
+        st.subheader(f"Depatmental Ballot Analysis in {selected_departement}")
+            
+        # --- Layout for Key Metrics ---
+        col6, col7, col8 = st.columns(3)
+        with col6:
+            st.metric("Total Votes Cast", f"{total_cast:,}")
+        with col7:
+            st.metric("Total Votes Blank", f"{total_blank:,}")
+        with col8:
+            st.metric("Total Votes Invalid", f"{total_invalid:,}")
+        
+        
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col9, col10 = st.columns(2)
+        
+        # --- Barplot using Plotly Express ---
+        with col9:
+            fig = px.bar(
+                x=['Cast', 'Blank', 'Invalid'],
+                y=[total_cast, total_blank, total_invalid],
+                color=['Cast', 'Blank', 'Invalid'],
+                color_discrete_map={'Cast': COLOR_PALETTE["Burgundy"], 'Blank': COLOR_PALETTE["Coffee"], "Invalid": COLOR_PALETTE["Cream"]},
+                title="Distribution of Cast, Blank, and Invalid Votes"
+            )
+            fig.update_layout(
+                xaxis_title="Vote Status",
+                yaxis_title="Number of Votes",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col10:
+            fig = px.pie(
+                values=[total_cast, total_blank, total_invalid],
+                names=['Cast', 'Blank', 'Invalid'],
+                title="Proportion of Cast, Blank, and Invalid Votes",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            st.plotly_chart(fig)
     
 def cityAnalysis():
+    
+    regions = df['Libellé_Région'].unique()
+    selected_region = st.selectbox("Select Region", regions)
+    
+    filtered_region_df = df[df['Libellé_Région'] == selected_region]
+    
+    departements = filtered_region_df['Libellé_département'].unique()
+    selected_departement = st.selectbox("Select Department", departements)
+    
+    filtered_department_df = df[df['Libellé_département'] == selected_departement]
+    
+    cities = filtered_department_df["Libellé_commune"].unique()
+    selected_city = st.selectbox("Select City",cities)
+    
+    filtered_city_df = df[df['Libellé_commune'] == selected_city]
+        
     st.title("Analysis of a specific city")
+    
+    # Button to select analysis type
+    analysis_type = st.selectbox("Select Analysis Type:", ["Vote Analysis", "Candidate Analysis", "Result Analysis"])
+    
+    if analysis_type == "Vote Analysis":
+        st.title(f"French Legislative Election: Departmental Voter Turnout and Ballot Analysis in {selected_departement}")
+
+        total_registered = filtered_city_df["Registered"].sum()
+        total_voters = filtered_city_df["Voters"].sum()
+        total_abstentions = filtered_city_df["Abstentions"].sum()
+        
+        # Display the subtitle of the Voter Turnout
+        st.subheader(f"Departmental Voter Turnout Analysis in {selected_city}")
+
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Registered Voters", f"{total_registered:,}")
+        with col2:
+            st.metric("Total Voters", f"{total_voters:,}")
+        with col3:
+            st.metric("Total Abstentions", f"{total_abstentions:,}")
+
+        st.markdown("---")  # Horizontal separator
+
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Voters', 'Abstentions'],
+                y=[total_voters, total_abstentions],
+                color=['Voters', 'Abstentions'],
+                color_discrete_map={'Voters': COLOR_PALETTE["Burgundy"], 'Abstentions': COLOR_PALETTE["Cream"]},
+                title="Distribution of Voters and Abstentions"
+            )
+            fig.update_layout(
+                xaxis_title="Voting Status",
+                yaxis_title="Number of Registered People",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[total_voters, total_abstentions],
+                names=['Voters', 'Abstentions'],
+                title="Voter Turnout Proportion",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3 
+            )
+            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            st.plotly_chart(fig)
+            
+        total_cast = filtered_city_df["Cast"].sum()
+        total_blank  = filtered_city_df["Blank"].sum()
+        total_invalid  = filtered_city_df["Invalid"].sum()
+        
+        # Display the subtitle of the Ballot Analysis
+        st.subheader(f"Depatmental Ballot Analysis in {selected_departement}")
+            
+        # --- Layout for Key Metrics ---
+        col6, col7, col8 = st.columns(3)
+        with col6:
+            st.metric("Total Votes Cast", f"{total_cast:,}")
+        with col7:
+            st.metric("Total Votes Blank", f"{total_blank:,}")
+        with col8:
+            st.metric("Total Votes Invalid", f"{total_invalid:,}")
+        
+        
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col9, col10 = st.columns(2)
+        
+        # --- Barplot using Plotly Express ---
+        with col9:
+            fig = px.bar(
+                x=['Cast', 'Blank', 'Invalid'],
+                y=[total_cast, total_blank, total_invalid],
+                color=['Cast', 'Blank', 'Invalid'],
+                color_discrete_map={'Cast': COLOR_PALETTE["Burgundy"], 'Blank': COLOR_PALETTE["Coffee"], "Invalid": COLOR_PALETTE["Cream"]},
+                title="Distribution of Cast, Blank, and Invalid Votes"
+            )
+            fig.update_layout(
+                xaxis_title="Vote Status",
+                yaxis_title="Number of Votes",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col10:
+            fig = px.pie(
+                values=[total_cast, total_blank, total_invalid],
+                names=['Cast', 'Blank', 'Invalid'],
+                title="Proportion of Cast, Blank, and Invalid Votes",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            st.plotly_chart(fig)
 
 # Display selected page
 if page == "Homepage":
