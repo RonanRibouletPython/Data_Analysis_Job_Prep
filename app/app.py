@@ -149,7 +149,7 @@ def load_data_from_csv(file_path: str, separator: str)-> pd.DataFrame:
 
     return df
 
-df = load_data_from_csv(file_path="../Clean_Data/2024/clean_dataset_legislative_2024.csv", separator=";")
+df = load_data_from_csv(file_path="clean_dataset_legislative_2024.csv", separator=";")
 df = df.rename(columns={"Votants": "Voters", 
                         "Abstentions": "Abstentions", 
                         "Inscrits": "Registered",
@@ -164,12 +164,12 @@ df["Code_département"] = df["Code_département"].astype(str).apply(lambda x: "0
 df['Libellé_Région'] = df['Code_département'].map(departements_regions)
 
 
-df_unique_candidates = load_data_from_csv("../Clean_Data/2024/candidates_legislative_2024.csv", separator=";")
+df_unique_candidates = load_data_from_csv("candidates_legislative_2024.csv", separator=";")
 
 # DataFrame with the candidates elected
 df_elected = df_unique_candidates[df_unique_candidates['Elu'] == True]
 
-df_candidates = load_data_from_csv("../Clean_Data/2024/candidates.csv", separator=";")
+df_candidates = load_data_from_csv("candidates.csv", separator=";")
 
 # --- Streamlit App ---
 
