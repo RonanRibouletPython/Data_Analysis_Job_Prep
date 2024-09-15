@@ -169,6 +169,8 @@ df_unique_candidates = load_data_from_csv("../Clean_Data/2024/candidates_legisla
 # DataFrame with the candidates elected
 df_elected = df_unique_candidates[df_unique_candidates['Elu'] == True]
 
+df_candidates = load_data_from_csv("../Clean_Data/2024/candidates.csv", separator=";")
+
 # --- Streamlit App ---
 
 # Sidebar
@@ -184,7 +186,9 @@ page = st.sidebar.selectbox("Go to", [
 # Page functions
 def page_home():
     st.title("Homepage")
-    st.write("Welcome to the analysis of the French Anticipated Legislative Election of 2024")
+    st.write("Welcome to the analysis of Second Turn Confrontations of the French Anticipated Legislative Election of 2024!")
+    
+    
 
 def national_analysis():
     
@@ -241,7 +245,7 @@ def national_analysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
                 hole=0.3 
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)
             
         total_cast = df["Cast"].sum()
@@ -292,16 +296,17 @@ def national_analysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
                 hole=0.3
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)
     
     if analysis_type == "Candidate Analysis":
-        st.title("French Legislative Election: Candidate Analysis")
+        st.title("French Legislative Election: National Candidate Analysis")
 
         tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
         total_candidates = df_unique_candidates["Nom_complet"].value_counts().sum()
-        male_candidates = df_unique_candidates["Sexe"].value_counts()["MASCULIN"]
-        female_candidates = df_unique_candidates["Sexe"].value_counts()["FEMININ"]
+        sex_counts = df_unique_candidates["Sexe"].value_counts()
+        male_candidates = sex_counts.get("MASCULIN", 0)
+        female_candidates = sex_counts.get("FEMININ", 0)
         tendency_count = df_unique_candidates["Tendency"].value_counts()
         tendency_by_gender = df_unique_candidates.groupby('Sexe')['Nuance',].value_counts().unstack(fill_value=0)
         
@@ -349,7 +354,7 @@ def national_analysis():
                 hole=0.3
             )
 
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)    
         
         # Display the subtitle of the Candidate Affiliations
@@ -400,7 +405,6 @@ def national_analysis():
             legend_title_text='Tendencies'
         )
         fig.update_traces(textinfo='percent',
-                        pull=[0.05, 0], 
                         rotation=180,
                         )  
 
@@ -411,7 +415,7 @@ def national_analysis():
         st.markdown("---")  # Horizontal separator
         
     if analysis_type == "Result Analysis":
-        st.title("French Legislative Election: Result Analysis")
+        st.title("French Legislative Election: National Result Analysis")
 
         tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
         total_mp = df_elected["Nom_complet"].value_counts().sum()
@@ -464,7 +468,7 @@ def national_analysis():
                 hole=0.3
             )
 
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)    
         
         # Display the subtitle of the Candidate Affiliations
@@ -514,8 +518,7 @@ def national_analysis():
             showlegend=True,  # Display the legend
             legend_title_text='Tendencies'
         )
-        fig.update_traces(textinfo='percent',
-                        pull=[0.05, 0], 
+        fig.update_traces(textinfo='percent', 
                         rotation=180,
                         )  
 
@@ -550,7 +553,7 @@ def regionAnalysis():
     analysis_type = st.selectbox("Select Analysis Type:", ["Vote Analysis", "Candidate Analysis", "Result Analysis"])
     
     if analysis_type == "Vote Analysis":
-        st.title(f"French Legislative Election: Voter Turnout and Ballot Analysis in {selected_region}")
+        st.title(f"French Legislative Election: Regional Voter Turnout and Ballot Analysis in {selected_region}")
 
         total_registered = filtered_df["Registered"].sum()
         total_voters = filtered_df["Voters"].sum()
@@ -599,7 +602,7 @@ def regionAnalysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
                 hole=0.3 
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)
             
         total_cast = filtered_df["Cast"].sum()
@@ -650,16 +653,17 @@ def regionAnalysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
                 hole=0.3
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)
     
     if analysis_type == "Candidate Analysis":
-        st.title(f"French Legislative Election: Candidate Analysis in {selected_region}")
+        st.title(f"French Legislative Election: Regional Candidate Analysis in {selected_region}")
 
         tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
         total_candidates = filtered_df_unique_candidates["Nom_complet"].value_counts().sum()
-        male_candidates = filtered_df_unique_candidates["Sexe"].value_counts()["MASCULIN"]
-        female_candidates = filtered_df_unique_candidates["Sexe"].value_counts()["FEMININ"]
+        sex_counts = filtered_df_unique_candidates["Sexe"].value_counts()
+        male_candidates = sex_counts.get("MASCULIN", 0)
+        female_candidates = sex_counts.get("FEMININ", 0)
         tendency_count = filtered_df_unique_candidates["Tendency"].value_counts()
         tendency_by_gender = filtered_df_unique_candidates.groupby('Sexe')['Nuance',].value_counts().unstack(fill_value=0)
         
@@ -707,7 +711,7 @@ def regionAnalysis():
                 hole=0.3
             )
 
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)    
         
         # Display the subtitle of the Candidate Affiliations
@@ -758,7 +762,6 @@ def regionAnalysis():
             legend_title_text='Tendencies'
         )
         fig.update_traces(textinfo='percent',
-                        pull=[0.05, 0], 
                         rotation=180,
                         )  
 
@@ -773,15 +776,15 @@ def regionAnalysis():
         
         filtered_df_elected_region = df_elected[df_elected["Région"]==selected_region]
         
-        st.title(f"French Legislative Election: Result Analysis in {selected_region}")
+        st.title(f"French Legislative Election: Regional Result Analysis in {selected_region}")
 
         tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
         total_mp = filtered_df_elected_region["Nom_complet"].value_counts().sum()
-        male_mp = filtered_df_elected_region["Sexe"].value_counts()["MASCULIN"]
-        female_mp = filtered_df_elected_region["Sexe"].value_counts()["FEMININ"]
         tendency_count = filtered_df_elected_region["Tendency"].value_counts()
         tendency_by_gender = filtered_df_elected_region.groupby('Sexe')['Nuance',].value_counts().unstack(fill_value=0)
-        
+        sex_counts = filtered_df_elected_region["Sexe"].value_counts()
+        male_mp = sex_counts.get("MASCULIN", 0)
+        female_mp = sex_counts.get("FEMININ", 0)
         # Display the subtitle of the Ballot Analysis
         st.subheader("Elected MP Gender Analysis")
         
@@ -826,7 +829,7 @@ def regionAnalysis():
                 hole=0.3
             )
 
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)    
         
         # Display the subtitle of the Candidate Affiliations
@@ -877,7 +880,6 @@ def regionAnalysis():
             legend_title_text='Tendencies'
         )
         fig.update_traces(textinfo='percent',
-                        pull=[0.05, 0], 
                         rotation=180,
                         )  
 
@@ -886,7 +888,6 @@ def regionAnalysis():
         st.plotly_chart(fig)
         
         st.markdown("---")  # Horizontal separator
-    
 
 def departmentAnalysis():
     regions = df['Libellé_Région'].unique()
@@ -964,7 +965,7 @@ def departmentAnalysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
                 hole=0.3 
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label', )
             st.plotly_chart(fig)
             
         total_cast = filtered_department_df["Cast"].sum()
@@ -1015,8 +1016,244 @@ def departmentAnalysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
                 hole=0.3
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label', )
             st.plotly_chart(fig)
+    
+    if analysis_type == "Candidate Analysis":
+        st.title(f"French Legislative Election: Departmental Candidate Turnout Analysis in {selected_departement}")
+        # Filter the DataFrame
+        new_filtered_department_df = df_candidates[df_candidates['Département'] == selected_departement]
+        new_filtered_department_df = new_filtered_department_df.drop_duplicates(subset='Nom_complet', keep="first")
+        total_candidates = new_filtered_department_df["Nom_complet"].nunique()
+        
+        tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
+        tendency_count = new_filtered_department_df["Tendency"].value_counts()
+        sex_counts = new_filtered_department_df["Sexe"].value_counts()
+        male_candidates = sex_counts.get("MASCULIN", 0)
+        female_candidates = sex_counts.get("FEMININ", 0)
+        # Display the subtitle of the Ballot Analysis
+        st.subheader("Candidate Gender Analysis")
+        
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Candidates", f"{total_candidates:,}")
+        with col2:
+            st.metric("Total Male Candidates", f"{male_candidates:,}")
+            pass
+        with col3:
+            st.metric("Total Female Candidates", f"{female_candidates:,}")
+            pass
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Male', 'Female'],
+                y=[male_candidates, female_candidates],
+                color=['Male', 'Female'],
+                color_discrete_map={'Male': COLOR_PALETTE["Burgundy"], 'Female': COLOR_PALETTE["Cream"]},
+                title="Distribution of Candidates Gender"
+            )
+            fig.update_layout(
+                xaxis_title="Gender of the Candidates",
+                yaxis_title="Number of Candidates",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[male_candidates, female_candidates],
+                names=['Male', 'Female'],
+                title="Proportion of Candidates Genders",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+
+            fig.update_traces(textinfo='percent+label',)
+            st.plotly_chart(fig)    
+        
+        # Display the subtitle of the Candidate Affiliations
+        st.subheader("Overview of French Legislative Candidate Affiliations")
+        
+        total_parties = new_filtered_department_df["Nuance"].nunique()
+        st.metric("Total Number of Parties or Political Alliances", f"{total_parties}")
+        
+        st.markdown("---")  # Horizontal separator
+        
+        fig = px.histogram(new_filtered_department_df, 
+                        x="Nuance", 
+                        color="Tendency", 
+                        color_discrete_map=palette_nuances,
+                        title="Distribution of French Legislative Candidates by Party and Tendency",
+                        category_orders={"Tendency": tendencies_plot_order})
+
+        # Customize layout
+        fig.update_layout(
+            xaxis_title="Political parties",
+            yaxis_title="Number of Candidates",
+            showlegend=True,
+            plot_bgcolor='white',
+            legend_title_text='Tendencies'
+        )
+
+        # Add text annotations for counts
+        fig.update_traces(texttemplate='%{y}', textposition='outside')
+
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        # Create the semi-donut chart
+        fig = px.pie(
+            tendency_count, 
+            values='count', 
+            names=tendency_count.index,
+            color=tendency_count.index,
+            color_discrete_map=palette_nuances,  
+            hole=0.5, 
+            title='Distribution of Political Tendencies' ,
+            category_orders={"Tendency": tendencies_plot_order},
+            
+        ) 
+        
+        fig.update_layout(
+            showlegend=True,  # Display the legend
+            legend_title_text='Tendencies'
+        )
+        fig.update_traces(textinfo='percent',
+                        rotation=180,
+                        )  
+
+        
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        st.markdown("---")  # Horizontal separator
+        
+    if analysis_type == "Result Analysis":
+        
+        df_region_elu = df_candidates[df_candidates['Elu'] == True]
+        # Filter the DataFrame
+        new_filtered_department_df = df_region_elu[df_region_elu["Département"] == selected_departement]
+        new_filtered_department_df = new_filtered_department_df.drop_duplicates(subset='Nom_complet', keep="first")
+        # Display the subtitle of the Result Analysis
+        st.title(f"French Legislative Election: Departmental Result Analysis in {selected_departement}")
+
+        tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
+        total_mp = new_filtered_department_df['Nom_complet'].value_counts().sum()
+        tendency_count = new_filtered_department_df["Tendency"].value_counts()
+        sex_counts = new_filtered_department_df["Sexe"].value_counts()
+        male_mp = sex_counts.get("MASCULIN", 0)
+        female_mp = sex_counts.get("FEMININ", 0)
+        #tendency_by_gender = df_region_elu.groupby('Sexe')['Nuance',].value_counts().unstack(fill_value=0)     
+        
+        st.subheader("Elected MP Gender Analysis")
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Elected MP", f"{total_mp:,}")
+        with col2:
+            st.metric("Total Male Elected MP", f"{male_mp:,}")
+        with col3:
+            st.metric("Total Female Elected MP", f"{female_mp:,}")
+
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Male', 'Female'],
+                y=[male_mp, female_mp],
+                color=['Male', 'Female'],
+                color_discrete_map={'Male': COLOR_PALETTE["Burgundy"], 'Female': COLOR_PALETTE["Cream"]},
+                title="Distribution of Elected MP Gender"
+            )
+            fig.update_layout(
+                xaxis_title="Gender of the Elected MP",
+                yaxis_title="Number of Elected MP",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[male_mp, female_mp],
+                names=['Male', 'Female'],
+                title="Proportion of Elected MP Genders",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+
+            fig.update_traces(textinfo='percent+label',)
+            st.plotly_chart(fig)
+            
+            # Display the subtitle of the Candidate Affiliations
+        st.subheader("Overview of French Legislative Elected MP Affiliations")
+        
+        total_parties = new_filtered_department_df["Nuance"].nunique()
+        st.metric("Total Number of Parties or Political Alliances", f"{total_parties}")
+        
+        st.markdown("---")  # Horizontal separator
+        
+        fig = px.histogram(new_filtered_department_df, 
+                        x="Nuance", 
+                        color="Tendency", 
+                        color_discrete_map=palette_nuances,
+                        title="Distribution of French Legislative Elected MP by Party and Tendency",
+                        category_orders={"Tendency": tendencies_plot_order})
+
+        # Customize layout
+        fig.update_layout(
+            xaxis_title="Political parties",
+            yaxis_title="Number of Elected MP",
+            showlegend=True,
+            plot_bgcolor='white',
+            legend_title_text='Tendencies'
+        )
+
+        # Add text annotations for counts
+        fig.update_traces(texttemplate='%{y}', textposition='outside')
+
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        # Create the semi-donut chart
+        fig = px.pie(
+            tendency_count, 
+            values='count', 
+            names=tendency_count.index,
+            color=tendency_count.index,
+            color_discrete_map=palette_nuances,  
+            hole=0.5, 
+            title='Distribution of Political Tendencies' ,
+            category_orders={"Tendency": tendencies_plot_order},
+            
+        ) 
+        
+        fig.update_layout(
+            showlegend=True,  # Display the legend
+            legend_title_text='Tendencies'
+        )
+        fig.update_traces(textinfo='percent',
+                        rotation=180,
+                        )  
+
+        
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        st.markdown("---")  # Horizontal separator
+    
     
 def cityAnalysis():
     
@@ -1041,14 +1278,14 @@ def cityAnalysis():
     analysis_type = st.selectbox("Select Analysis Type:", ["Vote Analysis", "Candidate Analysis", "Result Analysis"])
     
     if analysis_type == "Vote Analysis":
-        st.title(f"French Legislative Election: Departmental Voter Turnout and Ballot Analysis in {selected_departement}")
+        st.title(f"French Legislative Election: Communal Voter Turnout and Ballot Analysis in {selected_city}")
 
         total_registered = filtered_city_df["Registered"].sum()
         total_voters = filtered_city_df["Voters"].sum()
         total_abstentions = filtered_city_df["Abstentions"].sum()
         
         # Display the subtitle of the Voter Turnout
-        st.subheader(f"Departmental Voter Turnout Analysis in {selected_city}")
+        st.subheader(f"Communal Voter Turnout Analysis in {selected_city}")
 
         # --- Layout for Key Metrics ---
         col1, col2, col3 = st.columns(3)
@@ -1090,7 +1327,7 @@ def cityAnalysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
                 hole=0.3 
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)
             
         total_cast = filtered_city_df["Cast"].sum()
@@ -1141,8 +1378,244 @@ def cityAnalysis():
                 color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Coffee"], COLOR_PALETTE["Cream"]],
                 hole=0.3
             )
-            fig.update_traces(textinfo='percent+label', pull=[0.05, 0])
+            fig.update_traces(textinfo='percent+label',)
             st.plotly_chart(fig)
+            
+    
+    if analysis_type == "Candidate Analysis":
+        st.title(f"French Legislative Election: Communal Candidate Turnout Analysis in {selected_city}")
+        # Filter the DataFrame
+        new_filtered_city_df = df_candidates[df_candidates['Commune'] == selected_city]
+        new_filtered_city_df = new_filtered_city_df.drop_duplicates(subset='Nom_complet', keep="first")
+        total_candidates = new_filtered_city_df["Nom_complet"].nunique()
+        
+        tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
+        sex_counts = new_filtered_city_df["Sexe"].value_counts()
+        male_candidates = sex_counts.get("MASCULIN", 0)
+        female_candidates = sex_counts.get("FEMININ", 0)
+        tendency_count = new_filtered_city_df["Tendency"].value_counts()
+        # Display the subtitle of the Ballot Analysis
+        st.subheader("Candidate Gender Analysis")
+        
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Candidates", f"{total_candidates:,}")
+        with col2:
+            st.metric("Total Male Candidates", f"{male_candidates:,}")
+            pass
+        with col3:
+            st.metric("Total Female Candidates", f"{female_candidates:,}")
+            pass
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Male', 'Female'],
+                y=[male_candidates, female_candidates],
+                color=['Male', 'Female'],
+                color_discrete_map={'Male': COLOR_PALETTE["Burgundy"], 'Female': COLOR_PALETTE["Cream"]},
+                title="Distribution of Candidates Gender"
+            )
+            fig.update_layout(
+                xaxis_title="Gender of the Candidates",
+                yaxis_title="Number of Candidates",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[male_candidates, female_candidates],
+                names=['Male', 'Female'],
+                title="Proportion of Candidates Genders",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+
+            fig.update_traces(textinfo='percent+label',)
+            st.plotly_chart(fig)    
+        
+        # Display the subtitle of the Candidate Affiliations
+        st.subheader("Overview of French Legislative Candidate Affiliations")
+        
+        total_parties = new_filtered_city_df["Nuance"].nunique()
+        st.metric("Total Number of Parties or Political Alliances", f"{total_parties}")
+        
+        st.markdown("---")  # Horizontal separator
+        
+        fig = px.histogram(new_filtered_city_df, 
+                        x="Nuance", 
+                        color="Tendency", 
+                        color_discrete_map=palette_nuances,
+                        title="Distribution of French Legislative Candidates by Party and Tendency",
+                        category_orders={"Tendency": tendencies_plot_order})
+
+        # Customize layout
+        fig.update_layout(
+            xaxis_title="Political parties",
+            yaxis_title="Number of Candidates",
+            showlegend=True,
+            plot_bgcolor='white',
+            legend_title_text='Tendencies'
+        )
+
+        # Add text annotations for counts
+        fig.update_traces(texttemplate='%{y}', textposition='outside')
+
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        # Create the semi-donut chart
+        fig = px.pie(
+            tendency_count, 
+            values='count', 
+            names=tendency_count.index,
+            color=tendency_count.index,
+            color_discrete_map=palette_nuances,  
+            hole=0.5, 
+            title='Distribution of Political Tendencies' ,
+            category_orders={"Tendency": tendencies_plot_order},
+            
+        ) 
+        
+        fig.update_layout(
+            showlegend=True,  # Display the legend
+            legend_title_text='Tendencies'
+        )
+        fig.update_traces(textinfo='percent',
+                        rotation=180,
+                        )  
+
+        
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        st.markdown("---")  # Horizontal separator
+        
+    if analysis_type == "Result Analysis":
+        
+        df_region_elu = df_candidates[df_candidates['Elu'] == True]
+        # Filter the DataFrame
+        new_filtered_department_df = df_region_elu[df_region_elu["Commune"] == selected_city]
+        new_filtered_department_df = new_filtered_department_df.drop_duplicates(subset='Nom_complet', keep="first")
+        # Display the subtitle of the Result Analysis
+        st.title(f"French Legislative Election: Communal Result Analysis in {selected_city}")
+
+        tendencies_plot_order = ['Gauche-Radicale','Gauche', 'Centre', 'Centre-Droite', 'Droite', 'Extrême-Droite', 'Autres']
+        total_mp = new_filtered_department_df['Nom_complet'].value_counts().sum()
+        tendency_count = new_filtered_department_df["Tendency"].value_counts()
+        sex_counts = new_filtered_department_df["Sexe"].value_counts()
+        male_mp = sex_counts.get("MASCULIN", 0)
+        female_mp = sex_counts.get("FEMININ", 0)
+        #tendency_by_gender = df_region_elu.groupby('Sexe')['Nuance',].value_counts().unstack(fill_value=0)     
+        
+        st.subheader("Elected MP Gender Analysis")
+        # --- Layout for Key Metrics ---
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Total Elected MP", f"{total_mp:,}")
+        with col2:
+            st.metric("Total Male Elected MP", f"{male_mp:,}")
+        with col3:
+            st.metric("Total Female Elected MP", f"{female_mp:,}")
+
+        st.markdown("---")  # Horizontal separator
+        
+        # --- Layout for Charts ---
+        col4, col5 = st.columns(2)
+
+        # --- Barplot using Plotly Express ---
+        with col4:
+            fig = px.bar(
+                x=['Male', 'Female'],
+                y=[male_mp, female_mp],
+                color=['Male', 'Female'],
+                color_discrete_map={'Male': COLOR_PALETTE["Burgundy"], 'Female': COLOR_PALETTE["Cream"]},
+                title="Distribution of Elected MP Gender"
+            )
+            fig.update_layout(
+                xaxis_title="Gender of the Elected MP",
+                yaxis_title="Number of Elected MP",
+                yaxis_tickformat=",",
+                plot_bgcolor='rgba(0,0,0,0)'  # Transparent background
+            )
+            st.plotly_chart(fig)
+
+        # --- Pie Chart using Plotly Express ---
+        with col5:
+            fig = px.pie(
+                values=[male_mp, female_mp],
+                names=['Male', 'Female'],
+                title="Proportion of Elected MP Genders",
+                color_discrete_sequence=[COLOR_PALETTE["Burgundy"], COLOR_PALETTE["Cream"]],
+                hole=0.3
+            )
+
+            fig.update_traces(textinfo='percent+label',)
+            st.plotly_chart(fig)
+            
+            # Display the subtitle of the Candidate Affiliations
+        st.subheader("Overview of French Legislative Elected MP Affiliations")
+        
+        total_parties = new_filtered_department_df["Nuance"].nunique()
+        st.metric("Total Number of Parties or Political Alliances", f"{total_parties}")
+        
+        st.markdown("---")  # Horizontal separator
+        
+        fig = px.histogram(new_filtered_department_df, 
+                        x="Nuance", 
+                        color="Tendency", 
+                        color_discrete_map=palette_nuances,
+                        title="Distribution of French Legislative Elected MP by Party and Tendency",
+                        category_orders={"Tendency": tendencies_plot_order})
+
+        # Customize layout
+        fig.update_layout(
+            xaxis_title="Political parties",
+            yaxis_title="Number of Elected MP",
+            showlegend=True,
+            plot_bgcolor='white',
+            legend_title_text='Tendencies'
+        )
+
+        # Add text annotations for counts
+        fig.update_traces(texttemplate='%{y}', textposition='outside')
+
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        # Create the semi-donut chart
+        fig = px.pie(
+            tendency_count, 
+            values='count', 
+            names=tendency_count.index,
+            color=tendency_count.index,
+            color_discrete_map=palette_nuances,  
+            hole=0.5, 
+            title='Distribution of Political Tendencies' ,
+            category_orders={"Tendency": tendencies_plot_order},
+            
+        ) 
+        
+        fig.update_layout(
+            showlegend=True,  # Display the legend
+            legend_title_text='Tendencies'
+        )
+        fig.update_traces(textinfo='percent',
+                        rotation=180,
+                        )  
+
+        
+        # Display the chart using Streamlit
+        st.plotly_chart(fig)
+        
+        st.markdown("---")  # Horizontal separator
 
 # Display selected page
 if page == "Homepage":

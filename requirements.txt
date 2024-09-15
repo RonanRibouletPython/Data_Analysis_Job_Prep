@@ -2,9 +2,8 @@ numpy
 pandas
 matplotlib
 scikit-learn
-statsmodels
 seaborn
 scipy
 streamlit
 pyspark
-openpyxl
+plotly
