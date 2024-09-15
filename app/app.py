@@ -1385,7 +1385,8 @@ def cityAnalysis():
     if analysis_type == "Candidate Analysis":
         st.title(f"French Legislative Election: Communal Candidate Turnout Analysis in {selected_city}")
         # Filter the DataFrame
-        new_filtered_city_df = df_candidates[df_candidates['Commune'] == selected_city]
+        new_filtered_department_df = df_candidates[df_candidates['Département']==selected_departement]
+        new_filtered_city_df = new_filtered_department_df[new_filtered_department_df['Commune'] == selected_city]
         new_filtered_city_df = new_filtered_city_df.drop_duplicates(subset='Nom_complet', keep="first")
         total_candidates = new_filtered_city_df["Nom_complet"].nunique()
         
@@ -1502,7 +1503,8 @@ def cityAnalysis():
         
         df_region_elu = df_candidates[df_candidates['Elu'] == True]
         # Filter the DataFrame
-        new_filtered_department_df = df_region_elu[df_region_elu["Commune"] == selected_city]
+        new_filtered_department_df = df_region_elu[df_region_elu['Département']==selected_departement]
+        new_filtered_department_df = new_filtered_department_df[new_filtered_department_df["Commune"] == selected_city]
         new_filtered_department_df = new_filtered_department_df.drop_duplicates(subset='Nom_complet', keep="first")
         # Display the subtitle of the Result Analysis
         st.title(f"French Legislative Election: Communal Result Analysis in {selected_city}")
