@@ -15,30 +15,32 @@ CREATE TABLE actors (
     quality_class quality_class,
     is_active boolean,
     current_year int,
-    PRIMARY KEY(actor_name, current_year)
+    PRIMARY KEY(actor_name, actor_id, current_year) -- add the actor_id because two Jesse James appear in 2004
 );
-drop table actors
+
+-- In case we need to drop the table quickly
+drop table actors;
 
 -- Get the minimum and maximum years - Run this only ONCE
-SELECT MIN(year), MAX(year) FROM actor_films; -- Let's say it returns 1970 and 1975
+SELECT MIN(year), MAX(year) FROM actor_films;
 
 
--- Iteration 1:  (Manually adjust years in each iteration)
+ Iterate over each year from MIN(year) - 1 and MAX(year)
 INSERT INTO actors (actor_name, actor_id, films, quality_class, is_active, current_year)
 WITH yesterday AS (
-    SELECT * FROM actors WHERE current_year = 1973 - 1  -- No data initially, so empty
+    SELECT * FROM actors WHERE current_year = 2004 - 1
 ),
 today AS (
     SELECT 
         actor, actorid,
-        ARRAY_AGG(ROW(film, votes, rating, filmid)::films) AS films_array,
-        AVG(rating) AS avg_rating, year
+        ARRAY_AGG(ROW(film, votes, rating, filmid)::films) AS films_array, -- aggregate the multiple films an actor perform in within the same year
+        AVG(rating) AS avg_rating, year -- average the ratings of the aggregated films
     FROM actor_films
-    WHERE year = 1972  -- First year's data
+    WHERE year = 2004
     GROUP BY actor, actorid, year
 )
 SELECT COALESCE(t.actor, y.actor_name), COALESCE(t.actorid, y.actor_id), 
-       COALESCE(t.films_array, y.films),
+       COALESCE(t.films_array, y.films), -- use coalesce in order to return a value even though the actor doesn not have data for the current year
        CASE WHEN t.year IS NOT NULL THEN
            CASE WHEN t.avg_rating > 8 THEN 'star'::quality_class
                 WHEN t.avg_rating > 7 THEN 'good'::quality_class
