@@ -56,23 +56,71 @@ from actors a
 where current_year = 1970
 order by actor_name asc;
 
- 
-
 -- New task to do is create a table with type 2 Slowly Changing Dimension (SCD)
 -- 2 features need to be tracked the quality class and the is_active
 -- We need to add a start_date and an end_date 
+-- Single query to backfill the SCD table
 
 -- First step: create the create actors_scd table
 create table actors_history_scd(
 	actor_name text,
-    actor_id text,
-    films films[],
+	actor_id text,
     quality_class quality_class, -- column to track
     is_active boolean, -- column to track
-    current_year int, 
     start_date int, -- add the start date of the actor's carreer because SCD type 2
     end_date int, -- add the end date of the actor's carreer because SCD type 2
-    PRIMARY KEY(actor_name, start_date)
+    current_year int, 
+    PRIMARY KEY(actor_name, actor_id, start_date)
 )
+drop table actors_history_scd;
 
+-- Insert the values into the scd table
+insert into actors_history_scd
+-- Create a CTE called with_previous to store the previous data
+with with_previous as (
+    -- Use a window function to get the data from the previous season for the comparison
+    select 
+        actor_name,
+        actor_id,
+        current_year,
+        quality_class,
+        is_active,
+        lag(quality_class, 1) over (partition by actor_name order by current_year) as previous_quality_class,
+        lag(is_active, 1) over (partition by actor_name order by current_year) as previous_is_active
+    from actors
+),
+with_indicator as (
+	-- Select data from the CTE and create an indicator if a change in either is_active or quality_class appears between two consecutive years
+	select *,
+		case 
+			when quality_class <> previous_quality_class then 1
+			when is_active <> previous_is_active then 1
+			else 0
+		end as change_indicator
+	from with_previous
+),
+-- Create a CTE to find the streak of change indicators
+with_streak as (
+select *,
+	sum(change_indicator)
+		over (partition by actor_name order by current_year rows BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW ) AS streak_identifier
+	from with_indicator
+)
+select
+	actor_name,
+	actor_id,
+	quality_class,
+	is_active,
+	min(current_year) as start_year_of_streak,
+	max(current_year) as end_year_of_streak,
+	2022 as current_year
+from with_streak
+group by 
+	actor_name,
+	actor_id,
+	streak_identifier,
+	is_active,
+	quality_class
+order by actor_name, streak_identifier asc;
 
+select * from actors_history_scd;
