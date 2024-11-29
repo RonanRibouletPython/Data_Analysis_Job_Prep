@@ -1,0 +1,39 @@
+Feedback for Submission
+Overview
+The submission involves a SQL implementation that addresses a complex task of maintaining historical data through a type 2 Slowly Changing Dimension (SCD). The tasks involve creating a schema, inserting data, and managing historical changes using SQL queries.
+
+Strengths
+Type Definition: You have correctly defined custom types (films and quality_class) to structure the data, which is a great way to handle complex data types in SQL.
+
+Table Design: The design of the actors table and the historical SCD table is thoughtful. You have included fields like actor_name, actor_id, quality_class, is_active, and current_year that are necessary for tracking changes over time.
+
+Use of CTEs: Employing Common Table Expressions (CTEs) to handle intermediate results (with_previous, with_indicator, with_streak) makes the query more readable and modular. This is an excellent practice for complex query management.
+
+Handling Historical Changes: Your approach to identify changes using lag functions and then processing changes through sequences like with_indicator and with_streak is effective for SCD management.
+
+Incremental Backfill Strategy: You attempt to consider an incremental approach to replicate changes in existing data, which is crucial for maintaining historical integrity.
+
+Areas for Improvement
+Error Handling in Queries: There is a missing semicolon in some queries, specifically after table drop statements like drop table actors;. This could lead to execution errors. Ensure all SQL statements are syntactically verified.
+
+Unused CTEs: There is some repetition and unused CTE logic, especially around backfilling and changed records. It might help to consolidate similar logic to avoid redundancy, making the code cleaner.
+
+Code Clarity and Comments: While comments are present, more detailed explanations or a brief introductory comment outlining the aim of each SQL file could enhance understanding for someone unfamiliar with the codebase.
+
+Final Select Statement: It’s prudent to scrutinize final queries for correctness, such as ensuring the outputs from actors_history_scd reflect correct start and end dates.
+
+Optimization: Potential for optimization remains in query performance, especially in large datasets - consider indexing strategies to improve join and lookup efficiency.
+
+Safety with Drop Statements: Ensure that drop table commands are used safely, possibly checking for existence to avoid accidental data loss.
+
+Consistency in Logic: Ensure logic consistency, particularly in the way historical records are identified and handled between linked tasks (inserting and backfilling).
+
+Grading
+Here is your final grade in JSON format:
+
+FINAL GRADE:
+{
+  "letter_grade": "B",
+  "passes": true
+}
+Overall, the submission demonstrates a solid understanding of SCD type 2 mechanics and SQL capabilities, with room for polishing logic, readability, and error handling.
