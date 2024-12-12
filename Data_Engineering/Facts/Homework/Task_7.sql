@@ -10,6 +10,5 @@ create table host_activity_reduced (
 --drop table host_activity_reduced;
 --delete from host_activity_reduced;
 
-
-
-
+-- Task 8 : Incremental query to load host_activity_reduced
+-- TODO
